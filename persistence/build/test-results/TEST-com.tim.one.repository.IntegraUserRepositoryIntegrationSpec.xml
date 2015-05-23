@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tim.one.repository.IntegraUserRepositoryIntegrationSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-04-29T14:59:42" hostname="josdem-Inspiron-5420" time="0.539">
-  <properties/>
-  <testcase name="should find user by integra uuid" classname="com.tim.one.repository.IntegraUserRepositoryIntegrationSpec" time="0.539"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

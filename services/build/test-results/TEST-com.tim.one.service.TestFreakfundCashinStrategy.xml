@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tim.one.service.TestFreakfundCashinStrategy" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:47" hostname="josdem-Inspiron-5420" time="0.001">
-  <properties/>
-  <testcase name="shouldCashIn" classname="com.tim.one.service.TestFreakfundCashinStrategy" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

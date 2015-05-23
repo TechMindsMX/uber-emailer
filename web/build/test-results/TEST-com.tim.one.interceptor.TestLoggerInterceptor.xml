@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tim.one.interceptor.TestLoggerInterceptor" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-05-20T17:04:16" hostname="josdem-Inspiron-5420" time="0.187">
-  <properties/>
-  <testcase name="shouldNotAcceptGoogle" classname="com.tim.one.interceptor.TestLoggerInterceptor" time="0.183"/>
-  <testcase name="shouldAcceptLocalhost" classname="com.tim.one.interceptor.TestLoggerInterceptor" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

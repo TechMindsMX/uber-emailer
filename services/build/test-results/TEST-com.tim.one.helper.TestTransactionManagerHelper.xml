@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tim.one.helper.TestTransactionManagerHelper" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:13" hostname="josdem-Inspiron-5420" time="0.035">
-  <properties/>
-  <testcase name="shouldGetProjectTransactionBeans" classname="com.tim.one.helper.TestTransactionManagerHelper" time="0.032"/>
-  <testcase name="shouldGetTransactionBeans" classname="com.tim.one.helper.TestTransactionManagerHelper" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tim.one.collaborator.TestProjectVariableCostCollaborator" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:14" hostname="josdem-Inspiron-5420" time="0.013">
-  <properties/>
-  <testcase name="shouldDeleteProjectVariableCosts" classname="com.tim.one.collaborator.TestProjectVariableCostCollaborator" time="0.013"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

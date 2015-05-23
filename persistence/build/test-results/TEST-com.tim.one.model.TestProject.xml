@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tim.one.model.TestProject" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-04-29T14:59:45" hostname="josdem-Inspiron-5420" time="0.0">
-  <properties/>
-  <testcase name="shouldSetupProject" classname="com.tim.one.model.TestProject" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

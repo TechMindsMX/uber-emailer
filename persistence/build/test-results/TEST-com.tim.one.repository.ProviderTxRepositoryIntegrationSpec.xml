@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tim.one.repository.ProviderTxRepositoryIntegrationSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-04-29T14:59:36" hostname="josdem-Inspiron-5420" time="0.136">
-  <properties/>
-  <testcase name="should find a user tx by user and dates" classname="com.tim.one.repository.ProviderTxRepositoryIntegrationSpec" time="0.136"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

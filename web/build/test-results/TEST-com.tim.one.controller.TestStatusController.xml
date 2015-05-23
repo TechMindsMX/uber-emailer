@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tim.one.controller.TestStatusController" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-05-20T17:04:34" hostname="josdem-Inspiron-5420" time="0.007">
-  <properties/>
-  <testcase name="shouldListProjectStatus" classname="com.tim.one.controller.TestStatusController" time="0.007"/>
-  <system-out><![CDATA[2015-05-20 12:04:34,915  INFO [Test worker] (StatusController.java:40) - LISTING Project's status
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

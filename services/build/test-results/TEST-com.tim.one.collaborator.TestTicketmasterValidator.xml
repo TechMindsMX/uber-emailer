@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tim.one.collaborator.TestTicketmasterValidator" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:13" hostname="josdem-Inspiron-5420" time="0.001">
-  <properties/>
-  <testcase name="shouldNotValidate" classname="com.tim.one.collaborator.TestTicketmasterValidator" time="0.001"/>
-  <testcase name="shouldValidateWhenEmpty" classname="com.tim.one.collaborator.TestTicketmasterValidator" time="0.0"/>
-  <testcase name="shouldValidate" classname="com.tim.one.collaborator.TestTicketmasterValidator" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
