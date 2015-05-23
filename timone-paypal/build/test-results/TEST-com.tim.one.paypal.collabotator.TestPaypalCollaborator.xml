@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.paypal.collabotator.TestPaypalCollaborator" tests="3" skipped="0" failures="0" errors="0" timestamp="2014-11-19T16:27:30" hostname="josdem-Inspiron-5420" time="0.048">
+  <properties/>
+  <testcase name="shouldGetApprovalLink" classname="com.tim.one.paypal.collabotator.TestPaypalCollaborator" time="0.032"/>
+  <testcase name="shouldNotGetApprovalLink" classname="com.tim.one.paypal.collabotator.TestPaypalCollaborator" time="0.005"/>
+  <testcase name="shouldSetAmount" classname="com.tim.one.paypal.collabotator.TestPaypalCollaborator" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

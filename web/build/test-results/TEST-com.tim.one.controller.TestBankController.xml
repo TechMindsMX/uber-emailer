@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.controller.TestBankController" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-05-20T17:04:33" hostname="josdem-Inspiron-5420" time="0.006">
+  <properties/>
+  <testcase name="shouldListAdministrativeAccounts" classname="com.tim.one.controller.TestBankController" time="0.006"/>
+  <system-out><![CDATA[2015-05-20 12:04:33,965  INFO [Test worker] (BankController.java:33) - LISTING Administrative accounts
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

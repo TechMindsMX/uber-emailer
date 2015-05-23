@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.repository.ProjectRateRepositoryIntegrationSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-04-29T14:59:44" hostname="josdem-Inspiron-5420" time="0.206">
+  <properties/>
+  <testcase name="should find project rate by project" classname="com.tim.one.repository.ProjectRateRepositoryIntegrationSpec" time="0.206"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

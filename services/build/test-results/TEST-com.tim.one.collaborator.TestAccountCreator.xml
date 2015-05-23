@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.collaborator.TestAccountCreator" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:13" hostname="josdem-Inspiron-5420" time="0.006">
+  <properties/>
+  <testcase name="shouldCreateAccountIdLong" classname="com.tim.one.collaborator.TestAccountCreator" time="0.0"/>
+  <testcase name="shouldCreateUserAccountIdShort" classname="com.tim.one.collaborator.TestAccountCreator" time="0.0"/>
+  <testcase name="shouldCreateAccountVeryLong" classname="com.tim.one.collaborator.TestAccountCreator" time="0.005"/>
+  <testcase name="shouldCreateProjectAccount" classname="com.tim.one.collaborator.TestAccountCreator" time="0.0"/>
+  <testcase name="shouldCreateIntegraAccount" classname="com.tim.one.collaborator.TestAccountCreator" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

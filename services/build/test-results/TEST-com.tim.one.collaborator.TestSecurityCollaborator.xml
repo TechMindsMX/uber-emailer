@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.collaborator.TestSecurityCollaborator" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:13" hostname="josdem-Inspiron-5420" time="0.002">
+  <properties/>
+  <testcase name="shouldKnowIsNotTokenValue" classname="com.tim.one.collaborator.TestSecurityCollaborator" time="0.001"/>
+  <testcase name="shouldKnowIsTokenValue" classname="com.tim.one.collaborator.TestSecurityCollaborator" time="0.001"/>
+  <system-out><![CDATA[890  [Test worker] INFO  com.tim.one.collaborator.SecurityCollaborator  - diff: 1000
+891  [Test worker] INFO  com.tim.one.collaborator.SecurityCollaborator  - diff: 500
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

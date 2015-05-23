@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.tim.one.validator.html">com.tim.one.validator</a> &gt; StpConfirmOrderCommandValidatorIntegrationSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.120s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">When we have an transaction with 0 as id, and clave rastreo as 123 and 
+      timestamp 1 and estado as 0 and  
+			when we validate we expecting that result is: false</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an transaction with 1 as id, and clave rastreo as 0 and 
+      timestamp 1 and estado as 0 and  
+			when we validate we expecting that result is: false</td>
+<td>0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an transaction with 1 as id, and clave rastreo as 123 and 
+      timestamp 0 and estado as 0 and  
+			when we validate we expecting that result is: false</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an transaction with 1 as id, and clave rastreo as 123 and 
+      timestamp 1 and estado as 0 and  
+			when we validate we expecting that result is: true</td>
+<td>0.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an transaction with 1 as id, and clave rastreo as 123 and 
+      timestamp 1 and estado as 1 and  
+			when we validate we expecting that result is: true</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an transaction with 1 as id, and clave rastreo as 123 and 
+      timestamp 1 and estado as 2 and  
+			when we validate we expecting that result is: false</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an transaction with 1 as id, and clave rastreo as 123 and 
+      timestamp null and estado as 0 and  
+			when we validate we expecting that result is: false</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an transaction with 1 as id, and clave rastreo as null and 
+      timestamp 1 and estado as 0 and  
+			when we validate we expecting that result is: false</td>
+<td>0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an transaction with null as id, and clave rastreo as 123 and 
+      timestamp 1 and estado as 0 and  
+			when we validate we expecting that result is: false</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2015-05-20 12:04:30,092 DEBUG [Test worker] (AbstractFallbackTransactionAttributeSource.java:108) - Adding transactional method 'StpConfirmOrderCommandValidatorIntegrationSpec.$spock_feature_0_0' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2015-05-20 12:04:30,094  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (1) for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@3d3a726d, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:30,104  INFO [Test worker] (?:?) - violations:0
+2015-05-20 12:04:30,105  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@3d3a726d, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:30,108  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (2) for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@35448c0d, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:30,114  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:30,114  INFO [Test worker] (?:?) - field:id
+2015-05-20 12:04:30,115  INFO [Test worker] (?:?) - message:must be greater than or equal to 1
+2015-05-20 12:04:30,116  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@35448c0d, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:30,119  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (3) for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@a5ab6cd, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:30,125  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:30,125  INFO [Test worker] (?:?) - field:id
+2015-05-20 12:04:30,125  INFO [Test worker] (?:?) - message:may not be null
+2015-05-20 12:04:30,126  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@a5ab6cd, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:30,129  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (4) for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@29f4f5d1, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:30,137  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:30,137  INFO [Test worker] (?:?) - field:claveRastreo
+2015-05-20 12:04:30,137  INFO [Test worker] (?:?) - message:must be greater than or equal to 1
+2015-05-20 12:04:30,138  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@29f4f5d1, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:30,141  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (5) for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@57781f5a, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:30,148  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:30,148  INFO [Test worker] (?:?) - field:claveRastreo
+2015-05-20 12:04:30,148  INFO [Test worker] (?:?) - message:may not be null
+2015-05-20 12:04:30,149  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@57781f5a, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:30,154  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (6) for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@2e4f6cf1, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:30,165  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:30,165  INFO [Test worker] (?:?) - field:timestamp
+2015-05-20 12:04:30,165  INFO [Test worker] (?:?) - message:must be greater than or equal to 1
+2015-05-20 12:04:30,166  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@2e4f6cf1, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:30,170  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (7) for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@5602e0d5, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:30,181  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:30,182  INFO [Test worker] (?:?) - field:timestamp
+2015-05-20 12:04:30,182  INFO [Test worker] (?:?) - message:may not be null
+2015-05-20 12:04:30,183  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@5602e0d5, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:30,186  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (8) for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@7a47ea5a, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:30,193  INFO [Test worker] (?:?) - violations:0
+2015-05-20 12:04:30,194  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@7a47ea5a, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:30,196  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (9) for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@22c277b1, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:30,203  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:30,203  INFO [Test worker] (?:?) - field:estado
+2015-05-20 12:04:30,203  INFO [Test worker] (?:?) - message:must be between 0 and 1
+2015-05-20 12:04:30,204  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@7ee254ff testClass = StpConfirmOrderCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.StpConfirmOrderCommandValidatorIntegrationSpec@22c277b1, testMethod = $spock_feature_0_0@StpConfirmOrderCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@482e7182 testClass = StpConfirmOrderCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 2.1</a> at May 20, 2015 12:04:36 PM</p>
+</div>
+</div>
+</body>

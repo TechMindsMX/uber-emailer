@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.service.TestProjectTransactionService" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:30" hostname="josdem-Inspiron-5420" time="0.018">
+  <properties/>
+  <testcase name="shouldGetCRE" classname="com.tim.one.service.TestProjectTransactionService" time="0.006"/>
+  <testcase name="shouldGetMac" classname="com.tim.one.service.TestProjectTransactionService" time="0.001"/>
+  <testcase name="shouldGetTRF" classname="com.tim.one.service.TestProjectTransactionService" time="0.001"/>
+  <testcase name="shouldGetTRI" classname="com.tim.one.service.TestProjectTransactionService" time="0.001"/>
+  <testcase name="shouldGetMoreProfitable" classname="com.tim.one.service.TestProjectTransactionService" time="0.002"/>
+  <testcase name="shouldNotGetCRE" classname="com.tim.one.service.TestProjectTransactionService" time="0.001"/>
+  <testcase name="shouldNotGetTRF" classname="com.tim.one.service.TestProjectTransactionService" time="0.002"/>
+  <testcase name="shouldNotGetTRI" classname="com.tim.one.service.TestProjectTransactionService" time="0.002"/>
+  <testcase name="shouldNotGetTRFDueToNoUCF" classname="com.tim.one.service.TestProjectTransactionService" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

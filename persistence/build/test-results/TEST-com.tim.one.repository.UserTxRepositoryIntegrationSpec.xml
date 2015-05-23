@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.repository.UserTxRepositoryIntegrationSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-04-29T14:59:44" hostname="josdem-Inspiron-5420" time="0.404">
+  <properties/>
+  <testcase name="should find a user tx by id" classname="com.tim.one.repository.UserTxRepositoryIntegrationSpec" time="0.159"/>
+  <testcase name="should find a user tx by user and dates" classname="com.tim.one.repository.UserTxRepositoryIntegrationSpec" time="0.122"/>
+  <testcase name="should not find a user tx by sender and dates" classname="com.tim.one.repository.UserTxRepositoryIntegrationSpec" time="0.122"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

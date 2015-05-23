@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.tim.one.validator.html">com.tim.one.validator</a> &gt; CreateAccountCommandValidatorIntegrationSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">10</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.177s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">When we have an user with id 51d172788b034b738565f7dd4d4cb2f, and bank code 40014, and clabe 014180605638266336 
+  when we validate we expecting that result is: false</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an user with id 51d172788b034b738565f7dd4d4cb2fe, and bank code 0, and clabe 014180605638266336 
+  when we validate we expecting that result is: false</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an user with id 51d172788b034b738565f7dd4d4cb2fe, and bank code 40014, and clabe  
+  when we validate we expecting that result is: false</td>
+<td>0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an user with id 51d172788b034b738565f7dd4d4cb2fe, and bank code 40014, and clabe 014180605638266336 
+  when we validate we expecting that result is: true</td>
+<td>0.042s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an user with id 51d172788b034b738565f7dd4d4cb2fe, and bank code 40014, and clabe 646180111901200017646180111901200017646180111901213 
+  when we validate we expecting that result is: false</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an user with id 51d172788b034b738565f7dd4d4cb2fe, and bank code 40014, and clabe &lt;script&gt;alert('hello josdem')&lt;/script&gt; 
+  when we validate we expecting that result is: false</td>
+<td>0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an user with id 51d172788b034b738565f7dd4d4cb2fe, and bank code 40014, and clabe null 
+  when we validate we expecting that result is: false</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an user with id 51d172788b034b738565f7dd4d4cb2fe, and bank code null, and clabe 014180605638266336 
+  when we validate we expecting that result is: false</td>
+<td>0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an user with id 51d172788b034b738565f7dd4d4cb2fes, and bank code 40014, and clabe 014180605638266336 
+  when we validate we expecting that result is: false</td>
+<td>0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When we have an user with id null, and bank code 40014, and clabe 014180605638266336 
+  when we validate we expecting that result is: false</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2015-05-20 12:04:28,517 DEBUG [Test worker] (AbstractFallbackTransactionAttributeSource.java:108) - Adding transactional method 'CreateAccountCommandValidatorIntegrationSpec.$spock_feature_0_0' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2015-05-20 12:04:28,520  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (1) for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@3307c32e, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:28,537  INFO [Test worker] (?:?) - violations:0
+2015-05-20 12:04:28,538  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@3307c32e, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:28,541  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (2) for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@5b32ef01, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:28,551  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:28,551  INFO [Test worker] (?:?) - field:userUuid
+2015-05-20 12:04:28,551  INFO [Test worker] (?:?) - message:size must be between 32 and 32
+2015-05-20 12:04:28,552  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@5b32ef01, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:28,557  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (3) for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@51662cf9, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:28,568  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:28,568  INFO [Test worker] (?:?) - field:userUuid
+2015-05-20 12:04:28,568  INFO [Test worker] (?:?) - message:size must be between 32 and 32
+2015-05-20 12:04:28,569  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@51662cf9, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:28,573  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (4) for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@1b63886f, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:28,582  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:28,582  INFO [Test worker] (?:?) - field:userUuid
+2015-05-20 12:04:28,583  INFO [Test worker] (?:?) - message:may not be null
+2015-05-20 12:04:28,584  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@1b63886f, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:28,587  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (5) for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@5c832e61, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:28,595  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:28,596  INFO [Test worker] (?:?) - field:bankCode
+2015-05-20 12:04:28,596  INFO [Test worker] (?:?) - message:must be greater than or equal to 1
+2015-05-20 12:04:28,597  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@5c832e61, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:28,601  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (6) for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@2beadc7a, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:28,613  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:28,613  INFO [Test worker] (?:?) - field:bankCode
+2015-05-20 12:04:28,613  INFO [Test worker] (?:?) - message:may not be null
+2015-05-20 12:04:28,614  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@2beadc7a, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:28,618  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (7) for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@2889af56, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:28,631  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:28,631  INFO [Test worker] (?:?) - field:clabe
+2015-05-20 12:04:28,631  INFO [Test worker] (?:?) - message:size must be between 1 and 50
+2015-05-20 12:04:28,632  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@2889af56, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:28,636  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (8) for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@16cd7b1e, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:28,647  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:28,648  INFO [Test worker] (?:?) - field:clabe
+2015-05-20 12:04:28,648  INFO [Test worker] (?:?) - message:may not be null
+2015-05-20 12:04:28,649  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@16cd7b1e, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:28,652  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (9) for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@5959a82c, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:28,664  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:28,665  INFO [Test worker] (?:?) - field:clabe
+2015-05-20 12:04:28,665  INFO [Test worker] (?:?) - message:size must be between 1 and 50
+2015-05-20 12:04:28,666  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@5959a82c, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2015-05-20 12:04:28,669  INFO [Test worker] (TransactionalTestExecutionListener.java:276) - Began transaction (10) for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@3a58fbac, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5f5ca74d]; rollback [true]
+2015-05-20 12:04:28,677  INFO [Test worker] (?:?) - violations:1
+2015-05-20 12:04:28,677  INFO [Test worker] (?:?) - field:clabe
+2015-05-20 12:04:28,677  INFO [Test worker] (?:?) - message:may have unsafe html content
+2015-05-20 12:04:28,678  INFO [Test worker] (TransactionalTestExecutionListener.java:298) - Rolled back transaction after test execution for test context [DefaultTestContext@790eaf11 testClass = CreateAccountCommandValidatorIntegrationSpec, testInstance = com.tim.one.validator.CreateAccountCommandValidatorIntegrationSpec@3a58fbac, testMethod = $spock_feature_0_0@CreateAccountCommandValidatorIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@429f1b2e testClass = CreateAccountCommandValidatorIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 2.1</a> at May 20, 2015 12:04:35 PM</p>
+</div>
+</div>
+</body>

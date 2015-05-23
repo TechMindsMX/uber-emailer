@@ -1,0 +1,40 @@
+    #71 Componiendo test
+    #71 STPConsumerService ahora extiende de PaymentService
+    #71 PaypalService ahora extiende de PaymentService
+    #71 Agregando contrato a paypalService
+    #71 Agregando paymentBean
+    #71 Cambiando orden de parametros del cashIn STPConsumerService
+    #71 Cambiando nombre a cashIn de paypal para cumplir contrato
+    #71 Cambiando orden del service
+    #71 Modificando los parametros del cashIn del stp service
+    #71 Modificando las dependencias de services
+    #71 Agreagando payment-broker:payment-core a services
+    #71 Agreagando paymentService interface
+    #71 Agreagando payment-core project
+    #71 ajustando el orden de los módulos
+    #71 Indicando una tarea por proyecto
+    #71 acercamiento para configuración
+    #71 refactor de tareas comúnes en el build.gradle
+    #71 reconfigurando en gradle el módulo de Web
+    #71 renombrando el módulo a Web
+    #71 ajustando configuración de Gradle para nuevos módulos
+    #71 ajustando estructura de los módulos del proyecto
+    #71 moviendo módulos de paypal y stp a payment-broker
+    #71 quitando el módulo de timone-model de la aplicación
+    #71 moviendo clases de timone, en su mayoría constantes
+    #71 Borrando clases no necesarias
+    #71 Agregando test de integracion para simple bean messages
+    #71 Se anexaron los test de integracion del envio de correos para el cierre bean
+    #71 Cambiando los templates de html a ftl para uso de freemarker
+    #71 ignorando archivos
+    coding #71 reajustando la configuración para no dependenr de JMS en la prueba
+    #71 Agregando Notificaciones como servicio 2
+    #71 Agregando Notificaciones como servicio
+    #71 proving master commit and Jenkins sync
+    #71 prueba de concepto con groovy en el JmsMessageListener
+    coding #71 quitando timone-parent por la redefinición de la arquitectura, ya no es necesario por que solo tiene definiciones de maven que ya no usampos
+    coding #71 agregando la dependencia de groovy
+    #71 Prueba de concepto MailService
+    #71 Agregando los test y resources
+    #71 Agregando los componentes de freemarker
+    #71 Moviendo a esquema de sender y formatter

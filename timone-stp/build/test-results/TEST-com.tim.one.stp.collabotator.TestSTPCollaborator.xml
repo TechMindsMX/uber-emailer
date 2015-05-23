@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.stp.collabotator.TestSTPCollaborator" tests="2" skipped="0" failures="0" errors="0" timestamp="2014-11-19T16:27:31" hostname="josdem-Inspiron-5420" time="0.043">
+  <properties/>
+  <testcase name="shouldCreateOrdenPago" classname="com.tim.one.stp.collabotator.TestSTPCollaborator" time="0.037"/>
+  <testcase name="shouldGetSpeiService" classname="com.tim.one.stp.collabotator.TestSTPCollaborator" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Nov 19, 2014 10:27:31 AM com.lgec.enlacefi.spei.integration.h2h.SpeiServicesImplService <clinit>
+INFO: Can not initialize the default wsdl from SpeiServices
+]]></system-err>
+</testsuite>

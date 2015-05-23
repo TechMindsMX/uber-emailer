@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.service.TestSTPAccountService" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:51" hostname="josdem-Inspiron-5420" time="0.054">
+  <properties/>
+  <testcase name="shouldGetNewAccountWhenNoAccount" classname="com.tim.one.service.TestSTPAccountService" time="0.013"/>
+  <testcase name="shouldCreateAccount" classname="com.tim.one.service.TestSTPAccountService" time="0.024"/>
+  <testcase name="shouldNotCreateAccountDueToInvalidClabeException" classname="com.tim.one.service.TestSTPAccountService" time="0.004"/>
+  <testcase name="shouldNotCreateAccountDueToUserNotFound" classname="com.tim.one.service.TestSTPAccountService" time="0.002"/>
+  <testcase name="shouldGetNewAccountByUserIdSinceNotUser" classname="com.tim.one.service.TestSTPAccountService" time="0.002"/>
+  <testcase name="shouldGetAccountByUserId" classname="com.tim.one.service.TestSTPAccountService" time="0.005"/>
+  <testcase name="shouldNotCreateAccountDueToDuplicatedAccountException" classname="com.tim.one.service.TestSTPAccountService" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

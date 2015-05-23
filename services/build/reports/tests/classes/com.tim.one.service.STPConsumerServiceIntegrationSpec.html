@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.tim.one.service.STPConsumerServiceIntegrationSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.tim.one.service.STPConsumerServiceIntegrationSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.tim.one.service.html">com.tim.one.service</a> &gt; STPConsumerServiceIntegrationSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">13.212s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should create an userAccount by user</td>
+<td>9.450s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should do a cash in from STP</td>
+<td>0.324s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should not create an userAccount by user due to invalid bankCode</td>
+<td>3.438s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>21703 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils  - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tim.one.service.STPConsumerServiceIntegrationSpec]
+21704 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils  - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tim.one.service.STPConsumerServiceIntegrationSpec]
+21704 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils  - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tim.one.service.STPConsumerServiceIntegrationSpec]
+21704 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils  - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tim.one.service.STPConsumerServiceIntegrationSpec]
+21704 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils  - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tim.one.service.STPConsumerServiceIntegrationSpec]
+21704 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils  - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tim.one.service.STPConsumerServiceIntegrationSpec]
+21704 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils  - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tim.one.service.STPConsumerServiceIntegrationSpec]
+21704 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils  - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tim.one.service.STPConsumerServiceIntegrationSpec]
+21705 [Test worker] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader  - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@2fc9f5e8 declaringClass = 'com.tim.one.service.STPConsumerServiceIntegrationSpec', classes = '{}', locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+21705 [Test worker] DEBUG org.springframework.test.context.ContextLoaderUtils  - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.tim.one.service.STPConsumerServiceIntegrationSpec]
+21705 [Test worker] DEBUG org.springframework.test.context.TestContextManager  - @TestExecutionListeners is not present for class [com.tim.one.service.STPConsumerServiceIntegrationSpec]: using defaults.
+21712 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener  - Performing dependency injection for test context [[DefaultTestContext@d005875 testClass = STPConsumerServiceIntegrationSpec, testInstance = com.tim.one.service.STPConsumerServiceIntegrationSpec@11af6ffe, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e195c4 testClass = STPConsumerServiceIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+21712 [Test worker] DEBUG org.springframework.test.context.CacheAwareContextLoaderDelegate  - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e195c4 testClass = STPConsumerServiceIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+21717 [Test worker] DEBUG org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator  - Creating implicit proxy for bean 'com.tim.one.service.STPConsumerServiceIntegrationSpec' with 0 common interceptors and 3 specific interceptors
+21717 [Test worker] DEBUG org.springframework.aop.framework.JdkDynamicAopProxy  - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.tim.one.service.STPConsumerServiceIntegrationSpec@11af6ffe]
+21717 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+21717 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@662f8191] for JPA transaction
+21718 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@62baca2d]
+21719 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+21719 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@662f8191]
+21795 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@662f8191] after transaction
+21795 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+21795 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    275653 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    64502 nanoseconds spent preparing 1 JDBC statements;
+    261937 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    225280 nanoseconds spent performing 2 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    167010 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+21797 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [com.tim.one.service.impl.STPAccountServiceImpl.createAccout]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+21797 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@6bc93fad] for JPA transaction
+21797 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@29adb1eb]
+21812 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@6bc93fad] for JPA transaction
+21812 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+21816 [Test worker] DEBUG org.springframework.cache.annotation.AnnotationCacheOperationSource  - Adding cacheable method 'findByBankCode' with attribute: [CacheableOperation[public abstract com.tim.one.model.BankCode com.tim.one.repository.BankCodeRepository.findByBankCode(java.lang.Integer)] caches=[predefinedFinders] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='']
+21826 [Test worker] INFO  com.tim.one.integration.MessageService  - CALLING Message
+21827 [Test worker] DEBUG org.springframework.jms.core.JmsTemplate  - Executing callback on JMS Session: ActiveMQSession {id=ID:josdem-Inspiron-5420-62278-1432140019380-3:2:9,started=false}
+21828 [Test worker] DEBUG org.springframework.jms.core.JmsTemplate  - Sending created message: ActiveMQObjectMessage {commandId = 0, responseRequired = false, messageId = null, originalDestination = null, originalTransactionId = null, producerId = null, destination = null, transactionId = null, expiration = 0, timestamp = 0, arrival = 0, brokerInTime = 0, brokerOutTime = 0, correlationId = null, replyTo = null, persistent = false, type = null, priority = 0, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@5aca8f73, marshalledProperties = null, dataStructure = null, redeliveryCounter = 0, size = 0, properties = null, readOnlyProperties = false, readOnlyBody = false, droppable = false}
+21829 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.jms.listener.DefaultMessageListenerContainer  - Received message of type [class org.apache.activemq.command.ActiveMQObjectMessage] from consumer [ActiveMQMessageConsumer { value=ID:josdem-Inspiron-5420-62278-1432140019380-3:1:1:1, started=true }] of session [ActiveMQSession {id=ID:josdem-Inspiron-5420-62278-1432140019380-3:1:1,started=true}]
+21829 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+21832 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] INFO  com.tim.one.messengine.JmsMessageListener  - MESSAGE RECEIVED
+21832 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@6bc93fad]
+21838 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] INFO  com.tim.one.service.impl.NotificationServiceImpl  - Sending email with subject: Freakfund Notificación
+21886 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.ui.freemarker.SpringTemplateLoader  - Looking for FreeMarker template with name [alta_cuenta_retiro_en_US.ftl]
+21887 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.ui.freemarker.SpringTemplateLoader  - Looking for FreeMarker template with name [alta_cuenta_retiro_en.ftl]
+21887 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.ui.freemarker.SpringTemplateLoader  - Looking for FreeMarker template with name [alta_cuenta_retiro.ftl]
+21907 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@6bc93fad] after transaction
+21907 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+21907 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    258330 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    259865 nanoseconds spent preparing 5 JDBC statements;
+    1571994 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    1157708 nanoseconds spent performing 4 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    443353 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    1726953 nanoseconds spent executing 3 partial-flushes (flushing a total of 3 entities and 3 collections)
+}
+21912 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [com.tim.one.service.impl.STPConsumerServiceImpl.cashOut]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+21912 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@412b8670] for JPA transaction
+21913 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2018d3a6]
+29137 [net.sf.ehcache.CacheManager@afc52f] INFO  net.sf.ehcache.util.UpdateChecker  - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+30887 [Test worker] INFO  com.tim.one.stp.service.impl.STPServiceImpl  - Pago: com.lgec.enlacefi.spei.integration.h2h.OrdenPagoWS@748c7eab[causaDevolucion=&lt;null&gt;,claveCatUsuario1=&lt;null&gt;,claveCatUsuario2=&lt;null&gt;,clavePago=&lt;null&gt;,claveRastreo=&lt;null&gt;,claveRastreoDevolucion=&lt;null&gt;,conceptoPago=conceptoPago,conceptoPago2=&lt;null&gt;,cuentaBeneficiario=012180028515762163,cuentaBeneficiario2=&lt;null&gt;,cuentaOrdenante=646180111900000001,emailBeneficiario=joseluis.delacruz@trama.mx,empresa=TALENTUA,estado=&lt;null&gt;,fechaOperacion=&lt;null&gt;,firma=dqRkRkIoSkTOtqtdurxehnjSfMYWeQSD1MAJxUC9ApCLevc7+Ed/vMjtGXp2Z7Vp0in5eL2YY4ma
+mnEOOVLIw69G6RT4IH5ebXeVwXoPLEo0yihJVwGVIUfU2i4e/0nekcmfMdNri3/fBVHsavj2cRJR
+3lvPrRBEKP/EhKX1K0U=,folioOrigen=&lt;null&gt;,idCliente=&lt;null&gt;,institucionContraparte=40012,institucionOperante=90646,iva=&lt;null&gt;,medioEntrega=&lt;null&gt;,monto=100,nombreBeneficiario=josdem,nombreBeneficiario2=&lt;null&gt;,nombreOrdenante=&lt;null&gt;,prioridad=&lt;null&gt;,referenciaCobranza=&lt;null&gt;,referenciaNumerica=1150520,rfcCurpBeneficiario=&lt;null&gt;,rfcCurpBeneficiario2=&lt;null&gt;,rfcCurpOrdenante=&lt;null&gt;,tipoCuentaBeneficiario=40,tipoCuentaBeneficiario2=&lt;null&gt;,tipoCuentaOrdenante=&lt;null&gt;,tipoOperacion=&lt;null&gt;,tipoPago=1,topologia=&lt;null&gt;,usuario=&lt;null&gt;]
+30887 [Test worker] INFO  com.tim.one.stp.service.impl.STPServiceImpl  - com.lgec.enlacefi.spei.integration.h2h.SpeiServiceResponse@7dcda553[descripcionError=&lt;null&gt;,id=580763]
+30890 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@412b8670] for JPA transaction
+30890 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+30891 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@412b8670] for JPA transaction
+30891 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+30891 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@412b8670] for JPA transaction
+30891 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+30893 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@412b8670] for JPA transaction
+30893 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+30895 [Test worker] INFO  com.tim.one.integration.MessageService  - CALLING Message
+30895 [Test worker] DEBUG org.springframework.jms.core.JmsTemplate  - Executing callback on JMS Session: ActiveMQSession {id=ID:josdem-Inspiron-5420-62278-1432140019380-3:2:10,started=false}
+30897 [Test worker] DEBUG org.springframework.jms.core.JmsTemplate  - Sending created message: ActiveMQObjectMessage {commandId = 0, responseRequired = false, messageId = null, originalDestination = null, originalTransactionId = null, producerId = null, destination = null, transactionId = null, expiration = 0, timestamp = 0, arrival = 0, brokerInTime = 0, brokerOutTime = 0, correlationId = null, replyTo = null, persistent = false, type = null, priority = 0, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@33db71d7, marshalledProperties = null, dataStructure = null, redeliveryCounter = 0, size = 0, properties = null, readOnlyProperties = false, readOnlyBody = false, droppable = false}
+30899 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.jms.listener.DefaultMessageListenerContainer  - Received message of type [class org.apache.activemq.command.ActiveMQObjectMessage] from consumer [ActiveMQMessageConsumer { value=ID:josdem-Inspiron-5420-62278-1432140019380-5:1:1:1, started=true }] of session [ActiveMQSession {id=ID:josdem-Inspiron-5420-62278-1432140019380-5:1:1,started=true}]
+30899 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] INFO  com.tim.one.messengine.JmsMessageListener  - MESSAGE RECEIVED
+30899 [Test worker] DEBUG org.springframework.data.repository.core.support.TransactionalRepositoryProxyPostProcessor$CustomAnnotationTransactionAttributeSource  - Adding transactional method 'save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+30900 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@412b8670] for JPA transaction
+30900 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+30903 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+30903 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@412b8670]
+30904 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] INFO  com.tim.one.service.impl.NotificationServiceImpl  - Sending email with subject: Freakfund Notificación
+30908 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.ui.freemarker.SpringTemplateLoader  - Looking for FreeMarker template with name [CASHOUT_stp_en_US.ftl]
+30909 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.ui.freemarker.SpringTemplateLoader  - Looking for FreeMarker template with name [CASHOUT_stp_en.ftl]
+30909 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.ui.freemarker.SpringTemplateLoader  - Looking for FreeMarker template with name [CASHOUT_stp.ftl]
+30999 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@412b8670] after transaction
+30999 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+30999 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    317545 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1164166 nanoseconds spent preparing 9 JDBC statements;
+    3614495 nanoseconds spent executing 9 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    10475076 nanoseconds spent performing 11 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    12044258 nanoseconds spent executing 1 flushes (flushing a total of 5 entities and 1 collections);
+    381295 nanoseconds spent executing 2 partial-flushes (flushing a total of 2 entities and 2 collections)
+}
+31000 [Test worker] DEBUG org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler  - Creating new EntityManager for shared EntityManager invocation
+31005 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+31006 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    354971 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    951561 nanoseconds spent preparing 2 JDBC statements;
+    1521245 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    87602 nanoseconds spent performing 1 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+31017 [Test worker] DEBUG org.springframework.data.repository.core.support.TransactionalRepositoryProxyPostProcessor$CustomAnnotationTransactionAttributeSource  - Adding transactional method 'deleteAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+31017 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+31017 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@10661adc] for JPA transaction
+31018 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@484556b9]
+31023 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+31023 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@10661adc]
+31026 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@10661adc] after transaction
+31026 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+31027 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    335435 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    339252 nanoseconds spent preparing 2 JDBC statements;
+    911005 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    49296 nanoseconds spent performing 1 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2553740 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    8746 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+31027 [Test worker] DEBUG org.springframework.data.repository.core.support.TransactionalRepositoryProxyPostProcessor$CustomAnnotationTransactionAttributeSource  - Adding transactional method 'deleteAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+31027 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+31028 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1a760c39] for JPA transaction
+31028 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@730776bb]
+31040 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+31041 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1a760c39]
+31155 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1a760c39] after transaction
+31155 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+31156 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    378074 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1157930 nanoseconds spent preparing 5 JDBC statements;
+    2657483 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    1232585 nanoseconds spent performing 7 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3055366 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    9544 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+31156 [Test worker] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener  - After test method: context [DefaultTestContext@d005875 testClass = STPConsumerServiceIntegrationSpec, testInstance = com.tim.one.service.STPConsumerServiceIntegrationSpec@11af6ffe, testMethod = $spock_feature_0_0@STPConsumerServiceIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e195c4 testClass = STPConsumerServiceIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+31157 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener  - Performing dependency injection for test context [[DefaultTestContext@d005875 testClass = STPConsumerServiceIntegrationSpec, testInstance = com.tim.one.service.STPConsumerServiceIntegrationSpec@2743eb26, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e195c4 testClass = STPConsumerServiceIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+31157 [Test worker] DEBUG org.springframework.test.context.CacheAwareContextLoaderDelegate  - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e195c4 testClass = STPConsumerServiceIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+31157 [Test worker] DEBUG org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator  - Creating implicit proxy for bean 'com.tim.one.service.STPConsumerServiceIntegrationSpec' with 0 common interceptors and 3 specific interceptors
+31157 [Test worker] DEBUG org.springframework.aop.framework.JdkDynamicAopProxy  - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.tim.one.service.STPConsumerServiceIntegrationSpec@2743eb26]
+31158 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+31158 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@5c031fed] for JPA transaction
+31158 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@606523b2]
+31161 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+31162 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@5c031fed]
+31233 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@5c031fed] after transaction
+31233 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+31233 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    360442 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    233399 nanoseconds spent preparing 1 JDBC statements;
+    651995 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    904630 nanoseconds spent performing 2 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    286416 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+31234 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [com.tim.one.service.impl.STPAccountServiceImpl.createAccout]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+31234 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@5225c762] for JPA transaction
+31235 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3b771d2b]
+31241 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@5225c762] for JPA transaction
+31242 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+31245 [Test worker] INFO  com.tim.one.integration.MessageService  - CALLING Message
+31245 [Test worker] DEBUG org.springframework.jms.core.JmsTemplate  - Executing callback on JMS Session: ActiveMQSession {id=ID:josdem-Inspiron-5420-62278-1432140019380-3:2:11,started=false}
+31246 [Test worker] DEBUG org.springframework.jms.core.JmsTemplate  - Sending created message: ActiveMQObjectMessage {commandId = 0, responseRequired = false, messageId = null, originalDestination = null, originalTransactionId = null, producerId = null, destination = null, transactionId = null, expiration = 0, timestamp = 0, arrival = 0, brokerInTime = 0, brokerOutTime = 0, correlationId = null, replyTo = null, persistent = false, type = null, priority = 0, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@3ab999cf, marshalledProperties = null, dataStructure = null, redeliveryCounter = 0, size = 0, properties = null, readOnlyProperties = false, readOnlyBody = false, droppable = false}
+31247 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+31247 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@5225c762]
+31310 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@5225c762] after transaction
+31310 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+31311 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    496099 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    535985 nanoseconds spent preparing 5 JDBC statements;
+    2911626 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    482660 nanoseconds spent performing 3 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    759789 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    2160057 nanoseconds spent executing 3 partial-flushes (flushing a total of 3 entities and 3 collections)
+}
+31311 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [com.tim.one.service.impl.STPConsumerServiceImpl.cashOut]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+31311 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@39b02e70] for JPA transaction
+31312 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1297aa5c]
+34490 [Test worker] INFO  com.tim.one.stp.service.impl.STPServiceImpl  - Pago: com.lgec.enlacefi.spei.integration.h2h.OrdenPagoWS@6c7f4f9f[causaDevolucion=&lt;null&gt;,claveCatUsuario1=&lt;null&gt;,claveCatUsuario2=&lt;null&gt;,clavePago=&lt;null&gt;,claveRastreo=&lt;null&gt;,claveRastreoDevolucion=&lt;null&gt;,conceptoPago=conceptoPago,conceptoPago2=&lt;null&gt;,cuentaBeneficiario=012180028515762163,cuentaBeneficiario2=&lt;null&gt;,cuentaOrdenante=646180111900000001,emailBeneficiario=joseluis.delacruz@trama.mx,empresa=TALENTUA,estado=&lt;null&gt;,fechaOperacion=&lt;null&gt;,firma=g5p2VW0rdcaijMXzJCqn/fDywSXAlBBE/hQsa3TsJPneGAT0mcH9g9ifFLUuKAAaBh2d56I/x1Pc
+rGW6WPdpZx8puxEweqb4i2b025Z2ypYLvZdXXVY9+f5IFF7PCoghriaLS4e1PLtCbcg8O4OL/4BT
+ATjDIjoGiGd/mVG2WUE=,folioOrigen=&lt;null&gt;,idCliente=&lt;null&gt;,institucionContraparte=1,institucionOperante=90646,iva=&lt;null&gt;,medioEntrega=&lt;null&gt;,monto=100,nombreBeneficiario=josdem,nombreBeneficiario2=&lt;null&gt;,nombreOrdenante=&lt;null&gt;,prioridad=&lt;null&gt;,referenciaCobranza=&lt;null&gt;,referenciaNumerica=1150520,rfcCurpBeneficiario=&lt;null&gt;,rfcCurpBeneficiario2=&lt;null&gt;,rfcCurpOrdenante=&lt;null&gt;,tipoCuentaBeneficiario=40,tipoCuentaBeneficiario2=&lt;null&gt;,tipoCuentaOrdenante=&lt;null&gt;,tipoOperacion=&lt;null&gt;,tipoPago=1,topologia=&lt;null&gt;,usuario=&lt;null&gt;]
+34490 [Test worker] INFO  com.tim.one.stp.service.impl.STPServiceImpl  - com.lgec.enlacefi.spei.integration.h2h.SpeiServiceResponse@4dcdde53[descripcionError=La cuenta CLABE {012180028515762163} no coincide para la institucion operante {2001},id=-22]
+34491 [Test worker] INFO  com.tim.one.stp.service.impl.STPServiceImpl  - Error: La cuenta CLABE {012180028515762163} no coincide para la institucion operante {2001}
+34497 [Test worker] INFO  com.tim.one.advice.AfterThrowingAdvice  - Wrapping exception Could not find matching constructor for: com.tim.one.stp.exception.SPEITransactionException(java.lang.String)
+34498 [Test worker] INFO  com.tim.one.service.impl.LoggerServiceImpl  - CALLING Notifying
+34498 [Test worker] DEBUG org.springframework.jms.core.JmsTemplate  - Executing callback on JMS Session: ActiveMQSession {id=ID:josdem-Inspiron-5420-62278-1432140019380-3:2:12,started=false}
+34499 [Test worker] DEBUG org.springframework.jms.core.JmsTemplate  - Sending created message: ActiveMQObjectMessage {commandId = 0, responseRequired = false, messageId = null, originalDestination = null, originalTransactionId = null, producerId = null, destination = null, transactionId = null, expiration = 0, timestamp = 0, arrival = 0, brokerInTime = 0, brokerOutTime = 0, correlationId = null, replyTo = null, persistent = false, type = null, priority = 0, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@126f51ef, marshalledProperties = null, dataStructure = null, redeliveryCounter = 0, size = 0, properties = null, readOnlyProperties = false, readOnlyBody = false, droppable = false}
+34500 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction rollback
+34500 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Rolling back JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@39b02e70]
+34500 [org.springframework.jms.listener.DefaultMessageListenerContainer#1-1] DEBUG org.springframework.jms.listener.DefaultMessageListenerContainer  - Received message of type [class org.apache.activemq.command.ActiveMQObjectMessage] from consumer [ActiveMQMessageConsumer { value=ID:josdem-Inspiron-5420-62278-1432140019380-3:1:2:1, started=true }] of session [ActiveMQSession {id=ID:josdem-Inspiron-5420-62278-1432140019380-3:1:2,started=true}]
+34501 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@39b02e70] after transaction
+34501 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+34501 [org.springframework.jms.listener.DefaultMessageListenerContainer#1-1] INFO  com.tim.one.messengine.LoggerMessageListener  - Could not find matching constructor for: com.tim.one.stp.exception.SPEITransactionException(java.lang.String);null
+34501 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    269509 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    178287 nanoseconds spent preparing 3 JDBC statements;
+    1266305 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    51772 nanoseconds spent performing 1 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    272194 nanoseconds spent executing 2 partial-flushes (flushing a total of 2 entities and 2 collections)
+}
+34502 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+34502 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@4660df5e] for JPA transaction
+34503 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@55a379c7]
+34506 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+34506 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@4660df5e]
+34507 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@4660df5e] after transaction
+34507 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+34507 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    494845 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    123702 nanoseconds spent preparing 2 JDBC statements;
+    768137 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    58370 nanoseconds spent performing 1 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    475534 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    9948 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+34508 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+34508 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1935f1df] for JPA transaction
+34509 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@185028f7]
+34514 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+34514 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1935f1df]
+34593 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1935f1df] after transaction
+34594 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+34594 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    1245940 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    390475 nanoseconds spent preparing 5 JDBC statements;
+    3014724 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    754520 nanoseconds spent performing 7 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2901982 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    11033 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+34594 [Test worker] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener  - After test method: context [DefaultTestContext@d005875 testClass = STPConsumerServiceIntegrationSpec, testInstance = com.tim.one.service.STPConsumerServiceIntegrationSpec@2743eb26, testMethod = $spock_feature_0_1@STPConsumerServiceIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e195c4 testClass = STPConsumerServiceIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+34595 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener  - Performing dependency injection for test context [[DefaultTestContext@d005875 testClass = STPConsumerServiceIntegrationSpec, testInstance = com.tim.one.service.STPConsumerServiceIntegrationSpec@45bcd21e, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e195c4 testClass = STPConsumerServiceIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+34595 [Test worker] DEBUG org.springframework.test.context.CacheAwareContextLoaderDelegate  - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e195c4 testClass = STPConsumerServiceIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+34596 [Test worker] DEBUG org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator  - Creating implicit proxy for bean 'com.tim.one.service.STPConsumerServiceIntegrationSpec' with 0 common interceptors and 3 specific interceptors
+34596 [Test worker] DEBUG org.springframework.aop.framework.JdkDynamicAopProxy  - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.tim.one.service.STPConsumerServiceIntegrationSpec@45bcd21e]
+34597 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+34597 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@6f86d356] for JPA transaction
+34598 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@225df325]
+34600 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+34600 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@6f86d356]
+34662 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@6f86d356] after transaction
+34662 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+34662 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    601828 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    100117 nanoseconds spent preparing 1 JDBC statements;
+    477002 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    467386 nanoseconds spent performing 2 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    314137 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+34663 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [com.tim.one.service.impl.STPAccountServiceImpl.createAccout]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+34663 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@3b7a92a3] for JPA transaction
+34664 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@fb1d818]
+34670 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@3b7a92a3] for JPA transaction
+34670 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+34671 [Test worker] INFO  com.tim.one.integration.MessageService  - CALLING Message
+34671 [Test worker] DEBUG org.springframework.jms.core.JmsTemplate  - Executing callback on JMS Session: ActiveMQSession {id=ID:josdem-Inspiron-5420-62278-1432140019380-3:2:13,started=false}
+34673 [Test worker] DEBUG org.springframework.jms.core.JmsTemplate  - Sending created message: ActiveMQObjectMessage {commandId = 0, responseRequired = false, messageId = null, originalDestination = null, originalTransactionId = null, producerId = null, destination = null, transactionId = null, expiration = 0, timestamp = 0, arrival = 0, brokerInTime = 0, brokerOutTime = 0, correlationId = null, replyTo = null, persistent = false, type = null, priority = 0, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1b3cb43e, marshalledProperties = null, dataStructure = null, redeliveryCounter = 0, size = 0, properties = null, readOnlyProperties = false, readOnlyBody = false, droppable = false}
+34674 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+34674 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@3b7a92a3]
+34740 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@3b7a92a3] after transaction
+34740 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+34741 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    490819 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    338781 nanoseconds spent preparing 4 JDBC statements;
+    2066163 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    630238 nanoseconds spent performing 3 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1647560 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    361419 nanoseconds spent executing 2 partial-flushes (flushing a total of 1 entities and 1 collections)
+}
+34741 [Test worker] DEBUG org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler  - Creating new EntityManager for shared EntityManager invocation
+34747 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+34747 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    606886 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    856043 nanoseconds spent preparing 2 JDBC statements;
+    1456003 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    93234 nanoseconds spent performing 1 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+34748 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [com.tim.one.service.impl.STPConsumerServiceImpl.cashIn]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+34748 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7e330bd0] for JPA transaction
+34749 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@4f34d7be]
+34754 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7e330bd0] for JPA transaction
+34754 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+34755 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7e330bd0] for JPA transaction
+34755 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+34757 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7e330bd0] for JPA transaction
+34757 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+34758 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7e330bd0] for JPA transaction
+34758 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+34759 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7e330bd0] for JPA transaction
+34759 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Participating in existing transaction
+34762 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+34762 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7e330bd0]
+34799 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.jms.listener.DefaultMessageListenerContainer  - Received message of type [class org.apache.activemq.command.ActiveMQObjectMessage] from consumer [ActiveMQMessageConsumer { value=ID:josdem-Inspiron-5420-62278-1432140019380-3:1:1:1, started=true }] of session [ActiveMQSession {id=ID:josdem-Inspiron-5420-62278-1432140019380-3:1:1,started=true}]
+34799 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] INFO  com.tim.one.messengine.JmsMessageListener  - MESSAGE RECEIVED
+34800 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] INFO  com.tim.one.service.impl.NotificationServiceImpl  - Sending email with subject: Freakfund Notificación
+34800 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.ui.freemarker.SpringTemplateLoader  - Looking for FreeMarker template with name [alta_cuenta_retiro_en_US.ftl]
+34801 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.ui.freemarker.SpringTemplateLoader  - Looking for FreeMarker template with name [alta_cuenta_retiro_en.ftl]
+34801 [org.springframework.jms.listener.DefaultMessageListenerContainer#0-1] DEBUG org.springframework.ui.freemarker.SpringTemplateLoader  - Looking for FreeMarker template with name [alta_cuenta_retiro.ftl]
+34829 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7e330bd0] after transaction
+34829 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+34829 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    319630 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    442441 nanoseconds spent preparing 7 JDBC statements;
+    2984350 nanoseconds spent executing 7 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    829240 nanoseconds spent performing 9 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2146638 nanoseconds spent executing 1 flushes (flushing a total of 5 entities and 1 collections);
+    133676 nanoseconds spent executing 2 partial-flushes (flushing a total of 1 entities and 1 collections)
+}
+34830 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly; ''
+34830 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@5f16fb0f] for JPA transaction
+34830 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@148fc4b6]
+34832 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+34832 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@5f16fb0f]
+34836 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@5f16fb0f] after transaction
+34836 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+34837 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    374380 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    45286 nanoseconds spent preparing 1 JDBC statements;
+    629143 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    32056 nanoseconds spent performing 1 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+34838 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+34838 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@699371a] for JPA transaction
+34839 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1d52f58f]
+34842 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+34842 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@699371a]
+34844 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@699371a] after transaction
+34844 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+34844 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    474382 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    185364 nanoseconds spent preparing 2 JDBC statements;
+    1000291 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    73493 nanoseconds spent performing 1 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    411819 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    12579 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+34845 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+34845 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1c73f8bb] for JPA transaction
+34846 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2f97a420]
+34850 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Initiating transaction commit
+34850 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1c73f8bb]
+34918 [Test worker] DEBUG org.springframework.orm.jpa.JpaTransactionManager  - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@1c73f8bb] after transaction
+34918 [Test worker] DEBUG org.springframework.orm.jpa.EntityManagerFactoryUtils  - Closing JPA EntityManager
+34918 [Test worker] INFO  org.hibernate.engine.internal.StatisticalLoggingSessionEventListener  - Session Metrics {
+    367683 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    301905 nanoseconds spent preparing 5 JDBC statements;
+    2351389 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    793534 nanoseconds spent performing 7 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2539975 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    9324 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+34918 [Test worker] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener  - After test method: context [DefaultTestContext@d005875 testClass = STPConsumerServiceIntegrationSpec, testInstance = com.tim.one.service.STPConsumerServiceIntegrationSpec@45bcd21e, testMethod = $spock_feature_0_2@STPConsumerServiceIntegrationSpec, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e195c4 testClass = STPConsumerServiceIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+34918 [Test worker] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener  - After test class: context [DefaultTestContext@d005875 testClass = STPConsumerServiceIntegrationSpec, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e195c4 testClass = STPConsumerServiceIntegrationSpec, locations = '{classpath:/services-appctx.xml, classpath:/persistence-appctx.xml, classpath:/jms-appctx.xml, classpath:/mail-context.xml, classpath:/transaction-appctx.xml, classpath:/formatter-appctx.xml, classpath:/stp-appctx.xml, classpath:/aop-appctx.xml, classpath:/properties-appctx.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], dirtiesContext [false].
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>May 20, 2015 11:40:34 AM com.lgec.enlacefi.spei.integration.h2h.SpeiServicesImplService &lt;clinit&gt;
+INFO: Can not initialize the default wsdl from SpeiServices
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 2.1</a> at May 20, 2015 11:45:25 AM</p>
+</div>
+</div>
+</body>

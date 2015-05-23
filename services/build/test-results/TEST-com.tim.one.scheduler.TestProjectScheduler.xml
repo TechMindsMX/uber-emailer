@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.scheduler.TestProjectScheduler" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:12" hostname="josdem-Inspiron-5420" time="0.286">
+  <properties/>
+  <testcase name="shouldNotChangeStatusAtVerifyCronBreakeven" classname="com.tim.one.scheduler.TestProjectScheduler" time="0.274"/>
+  <testcase name="shouldNotChangeStatusAtVerifyCronBreakevenWhenNoFinancialData" classname="com.tim.one.scheduler.TestProjectScheduler" time="0.006"/>
+  <testcase name="shouldChangeStatusAtVerifyCronBreakeven" classname="com.tim.one.scheduler.TestProjectScheduler" time="0.005"/>
+  <system-out><![CDATA[0    [Test worker] INFO  com.tim.one.scheduler.ProjectScheduler  - WAKING breakeven timeout vakidator at:Wed May 20 11:40:12 CDT 2015
+23   [Test worker] INFO  com.tim.one.scheduler.ProjectScheduler  - WAKING breakeven timeout vakidator at:Wed May 20 11:40:12 CDT 2015
+29   [Test worker] INFO  com.tim.one.scheduler.ProjectScheduler  - WAKING breakeven timeout vakidator at:Wed May 20 11:40:12 CDT 2015
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

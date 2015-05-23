@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:tx="http://www.springframework.org/schema/tx" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"> <!-- bean definitions here -->
+        
+        <tx:advice transaction-manager="transactionManager" id="txAdvice">
+        	<tx:attributes>
+        		<tx:method name="get*" read-only="true"/>
+        		<tx:method name="create*"/>
+        		<tx:method name="save*"/>
+        		<tx:method name="change*"/>
+        		<tx:method name="measure*"/>
+        		<tx:method name="redeem*"/>
+        		<tx:method name="transfer*"/>
+        		<tx:method name="cashIn*"/>
+        		<tx:method name="cashOut*"/>
+        	</tx:attributes>
+        </tx:advice>
+        
+        <aop:config>
+        	<aop:pointcut expression="execution(* com.tim.one.service..**.*(..))" id="servicePointcut"/>
+        	<aop:advisor advice-ref="txAdvice" pointcut-ref="servicePointcut"/>
+        </aop:config>
+        
+        <aop:aspectj-autoproxy/>
+</beans>

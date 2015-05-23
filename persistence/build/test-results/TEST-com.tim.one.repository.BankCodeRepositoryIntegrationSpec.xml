@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.repository.BankCodeRepositoryIntegrationSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-04-29T14:59:43" hostname="josdem-Inspiron-5420" time="0.158">
+  <properties/>
+  <testcase name="should find a bank code by code" classname="com.tim.one.repository.BankCodeRepositoryIntegrationSpec" time="0.158"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

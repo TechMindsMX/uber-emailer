@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.controller.TestSTPController" tests="14" skipped="0" failures="0" errors="0" timestamp="2015-05-20T17:04:33" hostname="josdem-Inspiron-5420" time="0.148">
+  <properties/>
+  <testcase name="shouldRegisterCashIn" classname="com.tim.one.controller.TestSTPController" time="0.014"/>
+  <testcase name="shouldNotRegistraOrdenDueToSpeiTransactionException" classname="com.tim.one.controller.TestSTPController" time="0.063"/>
+  <testcase name="shouldConfirmaOrden" classname="com.tim.one.controller.TestSTPController" time="0.002"/>
+  <testcase name="shouldNotRegisterCashInDueToInvalidAmount" classname="com.tim.one.controller.TestSTPController" time="0.014"/>
+  <testcase name="shouldNotConfirmaOrdenDueToSTPResponseNotValid" classname="com.tim.one.controller.TestSTPController" time="0.006"/>
+  <testcase name="shouldListBankCodes" classname="com.tim.one.controller.TestSTPController" time="0.002"/>
+  <testcase name="shouldNotRegisterCashInDueToAccountNotFound" classname="com.tim.one.controller.TestSTPController" time="0.006"/>
+  <testcase name="shouldNotRegisterCashInDueToInvalidAmountNotNumeric" classname="com.tim.one.controller.TestSTPController" time="0.002"/>
+  <testcase name="shouldCashout" classname="com.tim.one.controller.TestSTPController" time="0.004"/>
+  <testcase name="shouldNotRegistraOrdenDueToNonSufficientFunds" classname="com.tim.one.controller.TestSTPController" time="0.007"/>
+  <testcase name="shouldNotRegistraOrdenDueToAccountNotFound" classname="com.tim.one.controller.TestSTPController" time="0.003"/>
+  <testcase name="shouldNotRegisterCashInDueToInvalidClabe" classname="com.tim.one.controller.TestSTPController" time="0.007"/>
+  <testcase name="shouldNotRegisterCashInDueToUserNotFound" classname="com.tim.one.controller.TestSTPController" time="0.007"/>
+  <testcase name="shouldNotConfirmaOrdenDueToSTPResponseNotExists" classname="com.tim.one.controller.TestSTPController" time="0.007"/>
+  <system-out><![CDATA[2015-05-20 12:04:33,783  INFO [Test worker] (STPController.java:72) - Cashin transfer funds from CLABE:clabeOrdenante to Trama w/amount: 1000 reference: reference
+2015-05-20 12:04:33,793  INFO [Test worker] (STPController.java:59) - CALLING registra orden
+2015-05-20 12:04:33,793  INFO [Test worker] (STPController.java:62) - Do cashout
+2015-05-20 12:04:33,847  INFO [Test worker] (STPController.java:83) - Confirming speiId: 2
+2015-05-20 12:04:33,854  INFO [Test worker] (STPController.java:72) - Cashin transfer funds from CLABE:clabeOrdenante to Trama w/amount: 1000 reference: reference
+2015-05-20 12:04:33,868  INFO [Test worker] (STPController.java:83) - Confirming speiId: 2
+2015-05-20 12:04:33,870  INFO [Test worker] (STPController.java:45) - List bank codes
+2015-05-20 12:04:33,876  INFO [Test worker] (STPController.java:72) - Cashin transfer funds from CLABE:clabeOrdenante to Trama w/amount: 1000 reference: reference
+2015-05-20 12:04:33,878  INFO [Test worker] (STPController.java:72) - Cashin transfer funds from CLABE:clabeOrdenante to Trama w/amount: 1000 reference: reference
+2015-05-20 12:04:33,880  INFO [Test worker] (STPController.java:59) - CALLING registra orden
+2015-05-20 12:04:33,880  INFO [Test worker] (STPController.java:62) - Do cashout
+2015-05-20 12:04:33,889  INFO [Test worker] (STPController.java:59) - CALLING registra orden
+2015-05-20 12:04:33,890  INFO [Test worker] (STPController.java:62) - Do cashout
+2015-05-20 12:04:33,893  INFO [Test worker] (STPController.java:59) - CALLING registra orden
+2015-05-20 12:04:33,894  INFO [Test worker] (STPController.java:62) - Do cashout
+2015-05-20 12:04:33,901  INFO [Test worker] (STPController.java:72) - Cashin transfer funds from CLABE:clabeOrdenante to Trama w/amount: 1000 reference: reference
+2015-05-20 12:04:33,908  INFO [Test worker] (STPController.java:72) - Cashin transfer funds from CLABE:clabeOrdenante to Trama w/amount: 1000 reference: reference
+2015-05-20 12:04:33,916  INFO [Test worker] (STPController.java:83) - Confirming speiId: 2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

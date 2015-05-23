@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.repository.ProjectProviderRepositoryIntegrationSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-04-29T14:59:35" hostname="josdem-Inspiron-5420" time="0.446">
+  <properties/>
+  <testcase name="should get an empty collection when no providers" classname="com.tim.one.repository.ProjectProviderRepositoryIntegrationSpec" time="0.282"/>
+  <testcase name="should find project provider by project and ordering by id" classname="com.tim.one.repository.ProjectProviderRepositoryIntegrationSpec" time="0.085"/>
+  <testcase name="should find project provider by project and provider" classname="com.tim.one.repository.ProjectProviderRepositoryIntegrationSpec" time="0.077"/>
+  <system-out><![CDATA[providerId: 3
+result: com.tim.one.model.ProjectProvider@35c496ec
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

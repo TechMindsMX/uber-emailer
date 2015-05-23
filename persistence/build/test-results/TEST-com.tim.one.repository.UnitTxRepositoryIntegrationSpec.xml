@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.repository.UnitTxRepositoryIntegrationSpec" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-04-29T14:59:43" hostname="josdem-Inspiron-5420" time="0.56">
+  <properties/>
+  <testcase name="should find project unit tx by userId" classname="com.tim.one.repository.UnitTxRepositoryIntegrationSpec" time="0.116"/>
+  <testcase name="should find unit tx by project unit sale id" classname="com.tim.one.repository.UnitTxRepositoryIntegrationSpec" time="0.054"/>
+  <testcase name="should find unit tx by type and user" classname="com.tim.one.repository.UnitTxRepositoryIntegrationSpec" time="0.055"/>
+  <testcase name="should find unit tx by projectUnitSales" classname="com.tim.one.repository.UnitTxRepositoryIntegrationSpec" time="0.057"/>
+  <testcase name="should find unit tx by type and projectUnitSales[0]" classname="com.tim.one.repository.UnitTxRepositoryIntegrationSpec" time="0.065"/>
+  <testcase name="should find unit tx by type and projectUnitSales[1]" classname="com.tim.one.repository.UnitTxRepositoryIntegrationSpec" time="0.055"/>
+  <testcase name="should find error unit tx by type and projectUnitSales when ids are empty" classname="com.tim.one.repository.UnitTxRepositoryIntegrationSpec" time="0.1"/>
+  <testcase name="should find project unit tx by userId and dates" classname="com.tim.one.repository.UnitTxRepositoryIntegrationSpec" time="0.056"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

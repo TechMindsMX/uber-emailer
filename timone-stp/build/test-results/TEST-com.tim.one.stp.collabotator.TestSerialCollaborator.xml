@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.stp.collabotator.TestSerialCollaborator" tests="3" skipped="0" failures="0" errors="0" timestamp="2014-11-19T16:27:31" hostname="josdem-Inspiron-5420" time="0.002">
+  <properties/>
+  <testcase name="shouldGetValidSerialInFullStack" classname="com.tim.one.stp.collabotator.TestSerialCollaborator" time="0.001"/>
+  <testcase name="shouldNotGetValidSerialDueToExceedLenght" classname="com.tim.one.stp.collabotator.TestSerialCollaborator" time="0.0"/>
+  <testcase name="shouldGetValidSerial" classname="com.tim.one.stp.collabotator.TestSerialCollaborator" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

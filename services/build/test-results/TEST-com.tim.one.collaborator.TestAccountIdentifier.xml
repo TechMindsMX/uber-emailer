@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.collaborator.TestAccountIdentifier" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:14" hostname="josdem-Inspiron-5420" time="0.001">
+  <properties/>
+  <testcase name="shouldGetProjectAccount" classname="com.tim.one.collaborator.TestAccountIdentifier" time="0.0"/>
+  <testcase name="shouldGetIntegraAccount" classname="com.tim.one.collaborator.TestAccountIdentifier" time="0.001"/>
+  <testcase name="shouldGetUserAccount" classname="com.tim.one.collaborator.TestAccountIdentifier" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

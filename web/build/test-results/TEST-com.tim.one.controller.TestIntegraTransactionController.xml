@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.controller.TestIntegraTransactionController" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-05-20T17:04:33" hostname="josdem-Inspiron-5420" time="0.059">
+  <properties/>
+  <testcase name="shouldCashin" classname="com.tim.one.controller.TestIntegraTransactionController" time="0.057"/>
+  <testcase name="shouldNotCashinDueToCommandIsNotValid" classname="com.tim.one.controller.TestIntegraTransactionController" time="0.002"/>
+  <system-out><![CDATA[2015-05-20 12:04:33,761  INFO [Test worker] (IntegraTransactionController.java:107) - Cashin to user w/uuid: uuid by: 100
+2015-05-20 12:04:33,765  INFO [Test worker] (IntegraTransactionController.java:107) - Cashin to user w/uuid: uuid by: 100
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

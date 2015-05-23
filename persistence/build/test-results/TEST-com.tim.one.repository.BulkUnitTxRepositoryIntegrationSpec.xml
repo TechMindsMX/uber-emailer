@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.repository.BulkUnitTxRepositoryIntegrationSpec" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-04-29T14:59:36" hostname="josdem-Inspiron-5420" time="0.183">
+  <properties/>
+  <testcase name="should find a bulk unit tx by id" classname="com.tim.one.repository.BulkUnitTxRepositoryIntegrationSpec" time="0.095"/>
+  <testcase name="should find a bulk and units" classname="com.tim.one.repository.BulkUnitTxRepositoryIntegrationSpec" time="0.087"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

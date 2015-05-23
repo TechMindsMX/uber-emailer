@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.controller.TestPaypalController" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-05-20T17:04:34" hostname="josdem-Inspiron-5420" time="0.058">
+  <properties/>
+  <testcase name="shouldNotPayIfNoPaymentId" classname="com.tim.one.controller.TestPaypalController" time="0.045"/>
+  <testcase name="shouldPayment" classname="com.tim.one.controller.TestPaypalController" time="0.003"/>
+  <testcase name="shouldCompletePayment" classname="com.tim.one.controller.TestPaypalController" time="0.01"/>
+  <system-out><![CDATA[2015-05-20 12:04:34,961  INFO [Test worker] (PaypalController.java:76) - Calling Paypal payment
+2015-05-20 12:04:34,961  INFO [Test worker] (PaypalController.java:80) - ReturnUrl: returnUrl
+2015-05-20 12:04:34,970  INFO [Test worker] (PaypalController.java:76) - Calling Paypal payment
+2015-05-20 12:04:34,970  INFO [Test worker] (PaypalController.java:80) - ReturnUrl: returnUrl
+2015-05-20 12:04:34,973  INFO [Test worker] (PaypalController.java:58) - COMPLETING Paypal transaction w/guid:guid PayerID: PayerID
+2015-05-20 12:04:34,980  INFO [Test worker] (PaypalController.java:60) - paypalBean: com.tim.one.paypal.bean.PaypalBean$$EnhancerByMockitoWithCGLIB$$35743c32@42f71701[userUuid=<null>,approvalUrl=<null>,paymentId=<null>,amount=<null>,callback=<null>,timestamp=<null>]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tim.one.service.TestUnitCalculator" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-05-20T16:40:52" hostname="josdem-Inspiron-5420" time="0.002">
+  <properties/>
+  <testcase name="shouldKnowNonSufficientUnits" classname="com.tim.one.service.TestUnitCalculator" time="0.001"/>
+  <testcase name="shouldKnowSufficientUnits" classname="com.tim.one.service.TestUnitCalculator" time="0.001"/>
+  <testcase name="shouldGetTotal" classname="com.tim.one.service.TestUnitCalculator" time="0.0"/>
+  <system-out><![CDATA[39850 [Test worker] INFO  com.tim.one.service.impl.UnitCalculatorImpl  - key: 1 value: 2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
