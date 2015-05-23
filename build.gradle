@@ -45,36 +45,6 @@ subprojects {
   }
 }
 
-project(":persistence"){
-  dependencies {
-		compile "com.fasterxml.jackson.core:jackson-annotations:2.4.3"
-    compile "org.springframework:spring-context:$springVersion"
-    compile "org.springframework:spring-orm:$springVersion"
-    compile "org.springframework:spring-aspects:$springVersion"
-    compile "org.hibernate:hibernate-entitymanager:$hibernateCoreVersion"
-    compile "org.hibernate:hibernate-ehcache:$hibernateCoreVersion"
-    compile "mysql:mysql-connector-java:$mysqlConnectorJavaVersion"
-    compile "org.liquibase:liquibase-core:3.2.2"
-    compile 'org.slf4j:slf4j-log4j12:1.7.6'
-    compile "commons-dbcp:commons-dbcp:1.4"
-    def excludesList = ['slf4j-api','jcl-over-slf4j','spring-orm','spring-context','spring-aop','spring-tx','spring-beans','spring-core']
-    compile("org.springframework.data:spring-data-jpa:1.4.3.RELEASE"){
-      excludesList.each { m -> exclude module:m }
-    }
-  }
-
-  def filesToInclude = ["persistence-${currentEnvironment}.properties"]
-  def toDirectory = 'src/main/resources/config'
-  
-  task settingEnvironment(type:Sync) {
-    from timoneConfigurationDir
-    into toDirectory
-    include filesToInclude
-    rename { String fileName -> fileName.replace("-${currentEnvironment}", '') }
-  }
-  processResources.dependsOn settingEnvironment
-}
-
 project(":timone-emailer:sender"){
   dependencies{
     compile "org.springframework.integration:spring-integration-mail:4.0.4.RELEASE"
@@ -109,7 +79,6 @@ project(":services"){
     compile "org.apache.commons:commons-lang3:3.0.1"
 		compile "commons-lang:commons-lang:2.3"
     compile "com.google.code.gson:gson:2.2.2" 
-    compile project(":persistence")
     compile project(":timone-emailer:formatter")
   }
   

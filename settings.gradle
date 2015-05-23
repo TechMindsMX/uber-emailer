@@ -1,5 +1,4 @@
 include "timone-emailer:formatter",
         "timone-emailer:sender",
-        "persistence",
         "services",
         "web"
