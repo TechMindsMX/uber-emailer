@@ -10,7 +10,6 @@ CREATE TABLE `BANK_CODE` (
 --changeset josdem:2
 CREATE TABLE `BULK_UNIT_TX` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(255) DEFAULT NULL,
   `timestamp` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -18,7 +17,6 @@ CREATE TABLE `BULK_UNIT_TX` (
 --changeset josdem:3
 CREATE TABLE `USER` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(255) DEFAULT NULL,
   `account` varchar(255) DEFAULT NULL,
   `balance` decimal(38,2) DEFAULT '0.00',
   `email` varchar(255) DEFAULT NULL,
@@ -51,7 +49,6 @@ CREATE TABLE `TRAMA_ACCOUNT` (
 --changeset josdem:6
 CREATE TABLE `PROJECT` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(255) DEFAULT NULL,
   `audioPublic` int(11) DEFAULT NULL,
   `avatar` varchar(255) DEFAULT NULL,
   `banner` varchar(255) DEFAULT NULL,
@@ -121,7 +118,7 @@ CREATE TABLE `PROJECT_LOG` (
   `reason` int(11) DEFAULT NULL,
   `status` int(11) DEFAULT NULL,
   `timestamp` bigint(20) DEFAULT NULL,
-  `userUuid` varchar(255) DEFAULT NULL,
+  `userId` int(11) DEFAULT NULL,
   `projectId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_fqepas589rpe3j2r4fdiu7vwq` (`projectId`),
@@ -142,7 +139,7 @@ CREATE TABLE `PROJECT_PHOTO` (
 CREATE TABLE `PROJECT_RATE` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `score` int(11) DEFAULT NULL,
-  `userUuid` varchar(255) DEFAULT NULL,
+  `userId` int(11) DEFAULT NULL,
   `projectId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_fo5ndxq9er6wpu4dnvy0gq7ik` (`projectId`),
@@ -173,11 +170,10 @@ CREATE TABLE `PROJECT_TAG` (
 CREATE TABLE `PROJECT_TX` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `amount` decimal(38,2) DEFAULT '0.00',
-  `uuid` varchar(255) DEFAULT NULL,
-  `projectUuid` varchar(255) DEFAULT NULL,
-  `userUuid` varchar(255) DEFAULT NULL,
+  `projectId` int(11) DEFAULT NULL,
   `timestamp` bigint(20) DEFAULT NULL,
   `type` int(11) DEFAULT NULL,
+  `userId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -221,9 +217,8 @@ CREATE TABLE `PROVIDER_TX` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `amount` decimal(38,2) DEFAULT '0.00',
   `paymentType` int(11) DEFAULT NULL,
-  `uuid` varchar(255) DEFAULT NULL,
-  `projectUuid` varchar(255) DEFAULT NULL,
-  `providerUuid` varchar(255) DEFAULT NULL,
+  `projectId` int(11) DEFAULT NULL,
+  `providerId` int(11) DEFAULT NULL,
   `timestamp` bigint(20) DEFAULT NULL,
   `type` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -257,7 +252,7 @@ CREATE TABLE `STP_STATUS` (
   `createdTimestamp` bigint(20) DEFAULT NULL,
   `estado` int(11) DEFAULT NULL,
   `serverTimestamp` bigint(20) DEFAULT NULL,
-  `userUuid` varchar(255) DEFAULT NULL,
+  `userId` int(11) DEFAULT NULL,
   `uuid` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -266,7 +261,7 @@ CREATE TABLE `STP_STATUS` (
 CREATE TABLE `TRAMA_TX` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `amount` decimal(38,2) DEFAULT '0.00',
-  `entityUuid` varchar(255) DEFAULT NULL,
+  `entityId` int(11) DEFAULT NULL,
   `entityType` int(11) DEFAULT NULL,
   `timestamp` bigint(20) DEFAULT NULL,
   `type` int(11) DEFAULT NULL,
@@ -280,7 +275,7 @@ CREATE TABLE `UNIT_TX` (
   `quantity` int(11) DEFAULT NULL,
   `timestamp` bigint(20) DEFAULT NULL,
   `type` int(11) DEFAULT NULL,
-  `userUuid` varchar(255) DEFAULT NULL,
+  `userId` int(11) DEFAULT NULL,
   `bulkId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_lnqhfr1gg9vg6t9vgntsub6yj` (`bulkId`),
@@ -292,10 +287,9 @@ CREATE TABLE `UNIT_TX` (
 CREATE TABLE `USER_TRANSFER_LIMIT` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `amount` decimal(38,2) DEFAULT '0.00',
-  `uuid` varchar(255) DEFAULT NULL,
-  `userUuid` varchar(255) DEFAULT NULL,
-  `destinationUuid` varchar(255) DEFAULT NULL,
+  `destinationId` int(11) DEFAULT NULL,
   `timestamp` bigint(20) DEFAULT NULL,
+  `userId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -303,11 +297,10 @@ CREATE TABLE `USER_TRANSFER_LIMIT` (
 CREATE TABLE `USER_TX` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `amount` decimal(38,2) DEFAULT '0.00',
+  `projectId` int(11) DEFAULT NULL,
+  `receiverId` int(11) DEFAULT NULL,
   `reference` varchar(255) DEFAULT NULL,
-  `senderUuid` varchar(255) DEFAULT NULL,
-  `projectUuid` varchar(255) DEFAULT NULL,
-  `receiverUuid` varchar(255) DEFAULT NULL,
-  `uuid` varchar(255) DEFAULT NULL,
+  `senderId` int(11) DEFAULT NULL,
   `timestamp` bigint(20) DEFAULT NULL,
   `type` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -316,7 +309,6 @@ CREATE TABLE `USER_TX` (
 --changeset josdem:27
 CREATE TABLE `PROJECT_PROVIDER` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `providerUuid` varchar(255) DEFAULT NULL,
   `advanceDate` bigint(20) DEFAULT NULL,
   `advanceFundingDate` bigint(20) DEFAULT NULL,
   `advancePaidDate` bigint(20) DEFAULT NULL,
@@ -340,7 +332,6 @@ CREATE TABLE `INTEGRA_USER` (
   `email` varchar(255) DEFAULT NULL,
   `balance` decimal(38,2) DEFAULT '0.00',
   `integraUuid` varchar(255) DEFAULT NULL,
-  `account` varchar(255) DEFAULT NULL,
   `stpClabe` varchar(255) DEFAULT NULL,
   `timoneUuid` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
