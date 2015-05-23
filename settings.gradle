@@ -1,8 +1,5 @@
 include "timone-emailer:formatter",
         "timone-emailer:sender",
-        "payment-broker:payment-core",
-        "payment-broker:timone-paypal",
-        "payment-broker:timone-stp",
         "persistence",
         "services",
         "web"

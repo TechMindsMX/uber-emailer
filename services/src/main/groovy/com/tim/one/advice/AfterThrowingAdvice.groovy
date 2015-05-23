@@ -6,7 +6,6 @@ import org.aspectj.lang.annotation.AfterThrowing
 import org.aspectj.lang.annotation.Aspect
 import org.springframework.stereotype.Component
 
-import com.stp.h2h.CryptoHandler.Exception.STPCryptoHandlerException
 import com.tim.one.exception.BusinessException
 import com.tim.one.interceptor.CryptoExceptionInterceptor
 import org.springframework.beans.factory.annotation.Autowired

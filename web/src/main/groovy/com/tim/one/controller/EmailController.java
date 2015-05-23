@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import com.tim.one.bean.MessageType;
 import com.tim.one.bean.mail.AbonoCuentaBean;
 import com.tim.one.integration.MessageService;
-import com.tim.one.service.NotificationService;
 
 /**
  * @author josdem

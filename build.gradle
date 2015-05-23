@@ -104,43 +104,12 @@ project(":timone-emailer:formatter"){
   }
 }
 
-project(":payment-broker:payment-core"){
-  dependencies{
-  }
-}
-
-project(":payment-broker:timone-paypal"){
-  dependencies{
-    compile "org.springframework:spring-context-support:$springVersion"
-    compile "com.paypal.sdk:rest-api-sdk:0.7.1"
-    compile project(":payment-broker:payment-core")
-  }
-}
-
-project(":payment-broker:timone-stp"){
-  dependencies{
-    compile "net.sf.json-lib:json-lib:2.3:jdk15"
-    compile "org.bouncycastle:bcprov-jdk15:1.46"
-    compile "commons-lang:commons-lang:2.3"
-    compile "com.stp.h2h:CryptoHandler:1.0"
-		compile "com.google.code.gson:gson:2.2.2"
-    compile "org.springframework:spring-orm:$springVersion"
-    compile "org.springframework:spring-webmvc:$springVersion"
-    testCompile "org.springframework:spring-test:$springVersion"
-    compile "org.springframework:spring-context-support:$springVersion"
-    compile "org.springframework:spring-tx:$springVersion"
-    compile project(":payment-broker:payment-core")
-  }
-}
-
 project(":services"){
   dependencies {
     compile "org.apache.commons:commons-lang3:3.0.1"
+		compile "commons-lang:commons-lang:2.3"
     compile "com.google.code.gson:gson:2.2.2" 
     compile project(":persistence")
-    compile project(":payment-broker:payment-core")
-    compile project(":payment-broker:timone-paypal")
-    compile project(":payment-broker:timone-stp")
     compile project(":timone-emailer:formatter")
   }
   

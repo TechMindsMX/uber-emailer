@@ -18,10 +18,8 @@
 	<import resource="classpath:/mail-context.xml" />
 	<import resource="classpath:/transaction-appctx.xml" />
 	<import resource="classpath:/formatter-appctx.xml" />
-	<import resource="classpath:/stp-appctx.xml" />
 	<import resource="classpath:/aop-appctx.xml" />
 	<import resource="classpath:/properties-appctx.xml" />
-	<import resource="classpath:/paypal-appctx.xml" />
 	<import resource="classpath:/monitor-appctx.xml" />
 
 	<context:component-scan base-package="com.tim.one" />
