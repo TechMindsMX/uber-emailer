@@ -9,7 +9,7 @@ ext {
   hsqldbVersion = "1.8.0.10"
   jmsApiVersion = "1.1-rev-1"
   currentEnvironment = project.hasProperty("environment")?environment:"development"
-  timoneConfigurationDir = "${System.getProperty('user.home')}/.timone"
+  timoneConfigurationDir = "${System.getProperty('user.home')}/.emailer"
 }
 
 buildscript {
@@ -129,29 +129,11 @@ project(":web"){
     compile project(":services")
 	}
 
-  def filesToInclude = ["*-${currentEnvironment}.properties","timone.properties","emailer.properties"]
-  def toDirectory = 'src/main/resources/config'
-  task settingEnvironment(type:Copy) {
-    from timoneConfigurationDir
-    into toDirectory
-    include filesToInclude
-		rename { String fileName -> fileName.replace("-${currentEnvironment}", '') }
-  }
-
-	filesToInclude = ["sdk_config-${currentEnvironment}.properties"]
-	toDirectory = 'src/main/resources'
-  task settingPaypalProperties(type:Copy){
-		from timoneConfigurationDir
-		into toDirectory
-		include filesToInclude
-		rename { String fileName -> fileName.replace("-${currentEnvironment}", '') }
-  }
-
   task settingLog4jProperties(type:Copy){
-    from "${System.getProperty('user.home')}/.timone/log4j-${currentEnvironment}.properties"
+    from "${System.getProperty('user.home')}/.emailer/log4j-${currentEnvironment}.properties"
     into "src/main/resources/"
 		rename { String fileName -> fileName.replace("-${currentEnvironment}", '') }
   }
 
-  processResources.dependsOn "settingEnvironment", "settingPaypalProperties", "settingLog4jProperties"
+  processResources.dependsOn "settingLog4jProperties"
 }
