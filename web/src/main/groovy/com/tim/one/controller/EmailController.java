@@ -14,10 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
+import com.tim.one.bean.ErrorCode;
 import com.tim.one.bean.MessageType;
 import com.tim.one.bean.mail.AbonoCuentaBean;
 import com.tim.one.command.EmailCommand;
 import com.tim.one.integration.MessageService;
+import com.tim.one.validator.CommandValidator;
 
 /**
  * @author josdem
@@ -31,6 +33,8 @@ public class EmailController {
 
 	@Autowired
 	private MessageService messageDispatcher;
+	@Autowired
+	private CommandValidator validator;
 
 	private Log log = LogFactory.getLog(getClass());
 
@@ -39,6 +43,10 @@ public class EmailController {
 	public ResponseEntity<String> send(@RequestBody String json) {
 		EmailCommand command = new Gson().fromJson(json, EmailCommand.class);
 		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
 		
     AbonoCuentaBean bean = new AbonoCuentaBean();
     bean.setAmount("10.00");
