@@ -7,7 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.tim.one.bean.MessageType;
-import com.tim.one.bean.mail.AbonoCuentaBean;
+import com.tim.one.bean.mail.ForgotPasswordBean;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:/mail-context.xml", "classpath:/services-test-appctx.xml"})
@@ -16,27 +16,21 @@ public class TestIntegrationMailService {
   @Autowired
   private NotificationService notificationService;
 
-  private String id = "1";
   private String email = "test@trama.mx";
-  private String name = "josdem";
-  private String amount = "100.00";
-  private String date = "date";
+  private String token = "token";
 
   @Test
   public void shouldSendAbonoCuentaMessage() throws Exception {
-    AbonoCuentaBean bean = setAbonoCuentaBeanExpectations();
-    bean.setType(MessageType.ABONO_CUENTA);
+    ForgotPasswordBean bean = setAbonoCuentaBeanExpectations();
+    bean.setType(MessageType.FORGOT_PASSWORD);
 
     notificationService.sendNotification(bean);
   }
   
-  private AbonoCuentaBean setAbonoCuentaBeanExpectations() {
-    AbonoCuentaBean bean = new AbonoCuentaBean();
-    bean.setId(id);
-    bean.setName(name);
-    bean.setAmount(amount);
-    bean.setDate(date);
+  private ForgotPasswordBean setAbonoCuentaBeanExpectations() {
+  	ForgotPasswordBean bean = new ForgotPasswordBean();
     bean.setEmail(email);
+    bean.setToken(token);
     return bean;
   }
 }
