@@ -17,7 +17,7 @@ import com.google.gson.Gson;
 import com.tim.one.bean.ErrorCode;
 import com.tim.one.bean.MessageType;
 import com.tim.one.bean.mail.AbonoCuentaBean;
-import com.tim.one.command.EmailCommand;
+import com.tim.one.command.ForgotPasswordCommand;
 import com.tim.one.integration.MessageService;
 import com.tim.one.validator.CommandValidator;
 
@@ -38,10 +38,10 @@ public class EmailController {
 
 	private Log log = LogFactory.getLog(getClass());
 
-	@RequestMapping(method = POST, value = "/send")
+	@RequestMapping(method = POST, value = "/forgotPassword")
 	@ResponseBody
-	public ResponseEntity<String> send(@RequestBody String json) {
-		EmailCommand command = new Gson().fromJson(json, EmailCommand.class);
+	public ResponseEntity<String> forgotPassword(@RequestBody String json){
+		ForgotPasswordCommand command = new Gson().fromJson(json, ForgotPasswordCommand.class);
 		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
 		
 		if(!validator.isValid(command)){
@@ -53,7 +53,7 @@ public class EmailController {
     bean.setName("josdem");
     bean.setDate("today");
     bean.setId("D1232134");
-    bean.setEmail("joseluis.delacruz@gmail.com");
+    bean.setEmail(command.getEmail());
     bean.setType(MessageType.ABONO_CUENTA);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);

@@ -97,10 +97,10 @@ project(":web"){
 	apply plugin:"war"
   war.archiveName "timone.war"
 	apply plugin:"jetty"
-  httpPort=8081
+  httpPort=8082
   apply plugin: 'tomcat'
   tomcat {
-    httpPort = 8081
+    httpPort = 8082
   }
 	dependencies{
 
