@@ -16,9 +16,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.google.gson.Gson;
 import com.tim.one.bean.ErrorCode;
 import com.tim.one.bean.MessageType;
-import com.tim.one.bean.mail.AbonoCuentaBean;
+import com.tim.one.bean.mail.ForgotPasswordBean;
 import com.tim.one.command.ForgotPasswordCommand;
 import com.tim.one.integration.MessageService;
+import com.tim.one.state.ApplicationState;
 import com.tim.one.validator.CommandValidator;
 
 /**
@@ -48,13 +49,10 @@ public class EmailController {
 	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
 		}
 		
-    AbonoCuentaBean bean = new AbonoCuentaBean();
-    bean.setAmount("10.00");
-    bean.setName("josdem");
-    bean.setDate("today");
-    bean.setId("D1232134");
+    ForgotPasswordBean bean = new ForgotPasswordBean();
+    bean.setToken(ApplicationState.HOST + command.getToken());
     bean.setEmail(command.getEmail());
-    bean.setType(MessageType.ABONO_CUENTA);
+    bean.setType(MessageType.FORGOT_PASSWORD);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}

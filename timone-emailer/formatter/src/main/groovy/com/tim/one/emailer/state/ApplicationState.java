@@ -51,4 +51,7 @@ public interface ApplicationState {
 	static final String TRASPASO_CUENTA_ORDENANTE_PATH = "traspasoCuentaOrdenantePath";
 	static final String TRASPASO_CUENTA_ORDENANTE_SUBJECT = "traspasoCuentaOrdenanteSubject";
 	
+	static final String FORGOT_PASSWORD_PATH = "forgotPasswordPath";
+	static final String FORGOT_PASSWORD_SUBJECT = "forgotPasswordSubject";
+	
 }
