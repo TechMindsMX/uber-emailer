@@ -18,6 +18,7 @@ import com.tim.one.bean.ErrorCode;
 import com.tim.one.bean.MessageType;
 import com.tim.one.bean.mail.ForgotPasswordBean;
 import com.tim.one.command.ForgotPasswordCommand;
+import com.tim.one.command.RegisterCommand;
 import com.tim.one.integration.MessageService;
 import com.tim.one.state.ApplicationState;
 import com.tim.one.validator.CommandValidator;
@@ -53,6 +54,24 @@ public class EmailController {
     bean.setToken(ApplicationState.HOST + command.getToken());
     bean.setEmail(command.getEmail());
     bean.setType(MessageType.FORGOT_PASSWORD);
+    messageDispatcher.message(bean);
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+	}
+	
+	@RequestMapping(method = POST, value = "/register")
+	@ResponseBody
+	public ResponseEntity<String> register(@RequestBody String json){
+		RegisterCommand command = new Gson().fromJson(json, RegisterCommand.class);
+		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
+		
+    ForgotPasswordBean bean = new ForgotPasswordBean();
+    bean.setToken(ApplicationState.HOST + command.getToken());
+    bean.setEmail(command.getEmail());
+    bean.setType(MessageType.REGISTER);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
