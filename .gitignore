@@ -5,3 +5,4 @@
 .settings/
 **/.gitignore
 timone-emailer/formatter/bin/
+services/bin

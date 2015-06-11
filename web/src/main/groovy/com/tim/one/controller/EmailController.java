@@ -89,7 +89,7 @@ public class EmailController {
 		}
 		
     NewUserBean bean = new NewUserBean();
-    bean.setEmail(command.getEmail());
+    bean.setEmail(ApplicationState.ADMIN_EMAIL);
     bean.setName(command.getName());
     bean.setType(MessageType.NEW_USER);
     messageDispatcher.message(bean);
