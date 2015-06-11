@@ -17,7 +17,9 @@ import com.google.gson.Gson;
 import com.tim.one.bean.ErrorCode;
 import com.tim.one.bean.MessageType;
 import com.tim.one.bean.mail.ForgotPasswordBean;
+import com.tim.one.bean.mail.NewUserBean;
 import com.tim.one.command.ForgotPasswordCommand;
+import com.tim.one.command.NewUserCommand;
 import com.tim.one.command.RegisterCommand;
 import com.tim.one.integration.MessageService;
 import com.tim.one.state.ApplicationState;
@@ -51,7 +53,7 @@ public class EmailController {
 		}
 		
     ForgotPasswordBean bean = new ForgotPasswordBean();
-    bean.setToken(ApplicationState.HOST + command.getToken());
+    bean.setToken(ApplicationState.FORGOT_PASSWORD_PREFIX + command.getToken());
     bean.setEmail(command.getEmail());
     bean.setType(MessageType.FORGOT_PASSWORD);
     messageDispatcher.message(bean);
@@ -69,9 +71,27 @@ public class EmailController {
 		}
 		
     ForgotPasswordBean bean = new ForgotPasswordBean();
-    bean.setToken(ApplicationState.HOST + command.getToken());
+    bean.setToken(ApplicationState.REGISTER_PREFIX + command.getToken());
     bean.setEmail(command.getEmail());
     bean.setType(MessageType.REGISTER);
+    messageDispatcher.message(bean);
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+	}
+	
+	@RequestMapping(method = POST, value = "/newUser")
+	@ResponseBody
+	public ResponseEntity<String> newUser(@RequestBody String json){
+		NewUserCommand command = new Gson().fromJson(json, NewUserCommand.class);
+		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
+		
+    NewUserBean bean = new NewUserBean();
+    bean.setEmail(command.getEmail());
+    bean.setName(command.getName());
+    bean.setType(MessageType.NEW_USER);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
