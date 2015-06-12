@@ -95,5 +95,23 @@ public class EmailController {
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
+	
+	@RequestMapping(method = POST, value = "/forgotUsername")
+	@ResponseBody
+	public ResponseEntity<String> forgotUsername(@RequestBody String json){
+		NewUserCommand command = new Gson().fromJson(json, NewUserCommand.class);
+		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
+		
+    NewUserBean bean = new NewUserBean();
+    bean.setEmail(command.getEmail());
+    bean.setName(command.getName());
+    bean.setType(MessageType.FORGOT_USERNAME);
+    messageDispatcher.message(bean);
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+	}
 
 }
