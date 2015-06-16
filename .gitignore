@@ -6,3 +6,4 @@
 **/.gitignore
 timone-emailer/formatter/bin/
 services/bin
+web/bin
