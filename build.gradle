@@ -128,6 +128,15 @@ project(":web"){
 		providedCompile "javax.servlet:jstl:1.2"
     compile project(":services")
 	}
+	
+	def filesToInclude = ["*-${currentEnvironment}.properties"]
+	def toDirectory = 'src/main/resources/config'
+	task settingEnvironment(type:Copy) {
+		from timoneConfigurationDir
+		into toDirectory
+		include filesToInclude
+		rename { String fileName -> fileName.replace("-${currentEnvironment}", '') }
+	}
 
   task settingLog4jProperties(type:Copy){
     from "${System.getProperty('user.home')}/.emailer/log4j-${currentEnvironment}.properties"
@@ -135,5 +144,5 @@ project(":web"){
 		rename { String fileName -> fileName.replace("-${currentEnvironment}", '') }
   }
 
-  processResources.dependsOn "settingLog4jProperties"
+  processResources.dependsOn "settingEnvironment","settingLog4jProperties"
 }
