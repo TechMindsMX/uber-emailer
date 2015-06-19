@@ -51,7 +51,7 @@
                 </div>
                 <p>Alguien ha solicitado resetear tu contraseña</p>
                 <p>Si solicitaste esto, por favor da clic en el siguiente link para resetear</p>
-                <a href="${token}">Resetear Contraseña</a>
+                <a href="${token}">${token}</a>
                 <br>
                 <p><br></p>
                 <p>Si tu no solicitaste o quieres conservar la contraseña actual, simplemente ignora este mensaje</p>
