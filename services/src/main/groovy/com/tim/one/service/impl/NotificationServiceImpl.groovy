@@ -1,5 +1,6 @@
 package com.tim.one.service.impl
 
+import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.logging.Log
 import org.apache.commons.logging.LogFactory
 import org.springframework.beans.factory.annotation.Autowired
@@ -23,6 +24,7 @@ class NotificationServiceImpl implements NotificationService {
 
   @Override
   void sendNotification(MessageBean messageBean) {
+		log.info "messageBean: ${messageBean.dump()}" 
     def (subject, templateName) = obtainSubjectAndResourceToSendNotification(messageBean)
     def data = [subject:subject, templateName:templateName, bean:messageBean]
     sendNotificationWithData(data)

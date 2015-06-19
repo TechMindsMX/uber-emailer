@@ -6,6 +6,7 @@ import javax.jms.ObjectMessage;
 import javax.jms.Session;
 import javax.jms.Destination;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,7 @@ public class MessageService {
 
 	public void message(final MessageBean bean) {
 		log.info("CALLING Message");
+		log.info("bean: " + ToStringBuilder.reflectionToString(bean));
 		template.send(destination, new MessageCreator() {
 
 			public Message createMessage(Session session) throws JMSException {
