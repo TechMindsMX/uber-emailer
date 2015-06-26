@@ -2,6 +2,8 @@ package com.tim.one.controller;
 
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
+import java.util.Properties;
+
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -39,6 +41,8 @@ public class EmailController {
 	private MessageService messageDispatcher;
 	@Autowired
 	private CommandValidator validator;
+	@Autowired
+	private Properties dynamic;
 
 	private Log log = LogFactory.getLog(getClass());
 
@@ -53,7 +57,7 @@ public class EmailController {
 		}
 		
     ForgotPasswordBean bean = new ForgotPasswordBean();
-    bean.setToken(ApplicationState.FORGOT_PASSWORD_PREFIX + command.getToken());
+    bean.setToken(dynamic.getProperty(ApplicationState.FORGOT_PASSWORD_PREFIX) + command.getToken());
     bean.setEmail(command.getEmail());
     bean.setType(MessageType.FORGOT_PASSWORD);
     messageDispatcher.message(bean);
@@ -71,7 +75,7 @@ public class EmailController {
 		}
 		
     ForgotPasswordBean bean = new ForgotPasswordBean();
-    bean.setToken(ApplicationState.REGISTER_PREFIX + command.getToken());
+    bean.setToken(dynamic.getProperty(ApplicationState.REGISTER_PREFIX) + command.getToken());
     bean.setEmail(command.getEmail());
     bean.setType(MessageType.REGISTER);
     messageDispatcher.message(bean);
@@ -89,7 +93,7 @@ public class EmailController {
 		}
 		
     NewUserBean bean = new NewUserBean();
-    bean.setEmail(ApplicationState.ADMIN_EMAIL);
+    bean.setEmail(dynamic.getProperty(ApplicationState.ADMIN_EMAIL));
     bean.setName(command.getName());
     bean.setType(MessageType.NEW_USER);
     messageDispatcher.message(bean);
