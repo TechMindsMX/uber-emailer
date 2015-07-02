@@ -18,8 +18,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.google.gson.Gson;
 import com.tim.one.bean.ErrorCode;
 import com.tim.one.bean.MessageType;
+import com.tim.one.bean.mail.FacilitatorBean;
 import com.tim.one.bean.mail.ForgotPasswordBean;
 import com.tim.one.bean.mail.NewUserBean;
+import com.tim.one.command.FacilitatorCommand;
 import com.tim.one.command.ForgotPasswordCommand;
 import com.tim.one.command.NewUserCommand;
 import com.tim.one.command.RegisterCommand;
@@ -114,6 +116,25 @@ public class EmailController {
     bean.setEmail(command.getEmail());
     bean.setName(command.getName());
     bean.setType(MessageType.FORGOT_USERNAME);
+    messageDispatcher.message(bean);
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+	}
+	
+	@RequestMapping(method = POST, value = "/facilitatorAssigned")
+	@ResponseBody
+	public ResponseEntity<String> facilitatorAssigned(@RequestBody String json){
+		FacilitatorCommand command = new Gson().fromJson(json, FacilitatorCommand.class);
+		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
+		
+    FacilitatorBean bean = new FacilitatorBean();
+    bean.setEmail(command.getEmail());
+    bean.setFacilitator(command.getFacilitator());
+    bean.setMusician(command.getMusician());
+    bean.setType(MessageType.FACILITATOR_ASSIGNED);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
