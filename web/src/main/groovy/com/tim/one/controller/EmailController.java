@@ -120,9 +120,9 @@ public class EmailController {
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
 	
-	@RequestMapping(method = POST, value = "/facilitatorAssigned")
+	@RequestMapping(method = POST, value = "/musicianAssignedFacilitator")
 	@ResponseBody
-	public ResponseEntity<String> facilitatorAssigned(@RequestBody String json){
+	public ResponseEntity<String> musicianAssignedFacilitator(@RequestBody String json){
 		AssignationCommand command = new Gson().fromJson(json, AssignationCommand.class);
 		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
 		
@@ -158,9 +158,9 @@ public class EmailController {
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
 	
-	@RequestMapping(method = POST, value = "/buyerAssigned")
+	@RequestMapping(method = POST, value = "/companyAssignedBuyer")
 	@ResponseBody
-	public ResponseEntity<String> buyerAssigned(@RequestBody String json){
+	public ResponseEntity<String> companyAssignedBuyer(@RequestBody String json){
 		AssignationCommand command = new Gson().fromJson(json, AssignationCommand.class);
 		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
 		
