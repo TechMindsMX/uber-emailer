@@ -157,5 +157,24 @@ public class EmailController {
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
+	
+	@RequestMapping(method = POST, value = "/buyerAssigned")
+	@ResponseBody
+	public ResponseEntity<String> buyerAssigned(@RequestBody String json){
+		FacilitatorCommand command = new Gson().fromJson(json, FacilitatorCommand.class);
+		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
+		
+    FacilitatorBean bean = new FacilitatorBean();
+    bean.setEmail(command.getEmail());
+    bean.setFacilitator(command.getFacilitator());
+    bean.setMusician(command.getMusician());
+    bean.setType(MessageType.BUYER_ASSIGNED);
+    messageDispatcher.message(bean);
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+	}
 
 }
