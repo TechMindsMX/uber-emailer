@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <p>Estimado ${facilitator} le informamos que la empresa ${musician} ha sido asignada a usted.</p>
+                <p>Estimado ${name} le informamos que la empresa ${reference} ha sido asignada a usted.</p>
                 <p><br></p>
                 <p><br></p>
                 <p class="text-center"><br></p>

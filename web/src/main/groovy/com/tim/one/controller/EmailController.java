@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.google.gson.Gson;
 import com.tim.one.bean.ErrorCode;
 import com.tim.one.bean.MessageType;
-import com.tim.one.bean.mail.FacilitatorBean;
+import com.tim.one.bean.mail.AssignationBean;
 import com.tim.one.bean.mail.ForgotPasswordBean;
 import com.tim.one.bean.mail.NewUserBean;
 import com.tim.one.command.AssignationCommand;
@@ -130,10 +130,10 @@ public class EmailController {
 	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
 		}
 		
-    FacilitatorBean bean = new FacilitatorBean();
+    AssignationBean bean = new AssignationBean();
     bean.setEmail(command.getEmailDestination());
-    bean.setFacilitator(command.getName());
-    bean.setMusician(command.getReference());
+    bean.setName(command.getName());
+    bean.setReference(command.getReference());
     bean.setType(MessageType.FACILITATOR_ASSIGNED);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
@@ -149,10 +149,10 @@ public class EmailController {
 	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
 		}
 		
-    FacilitatorBean bean = new FacilitatorBean();
+    AssignationBean bean = new AssignationBean();
     bean.setEmail(command.getEmailDestination());
-    bean.setFacilitator(command.getName());
-    bean.setMusician(command.getReference());
+    bean.setName(command.getName());
+    bean.setReference(command.getReference());
     bean.setType(MessageType.MUSICIAN_REFUSED);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
@@ -168,10 +168,10 @@ public class EmailController {
 	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
 		}
 		
-    FacilitatorBean bean = new FacilitatorBean();
+    AssignationBean bean = new AssignationBean();
     bean.setEmail(command.getEmailDestination());
-    bean.setFacilitator(command.getName());
-    bean.setMusician(command.getReference());
+    bean.setName(command.getName());
+    bean.setReference(command.getReference());
     bean.setType(MessageType.BUYER_ASSIGNED);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
@@ -187,10 +187,10 @@ public class EmailController {
 	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
 		}
 		
-    FacilitatorBean bean = new FacilitatorBean();
+    AssignationBean bean = new AssignationBean();
     bean.setEmail(command.getEmailDestination());
-    bean.setFacilitator(command.getName());
-    bean.setMusician(command.getReference());
+    bean.setName(command.getName());
+    bean.setReference(command.getReference());
     bean.setType(MessageType.COMPANY_REFUSED);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);

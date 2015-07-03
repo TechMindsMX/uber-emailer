@@ -2,9 +2,10 @@ package com.tim.one.bean.mail
 
 import com.tim.one.bean.MessageType;
 
-class FacilitatorBean implements MessageBean {
+class AssignationBean implements MessageBean {
 	String email
-	String facilitator
-	String musician
+	String name
+	String reference
+	String emailOptional
 	MessageType type
 }
