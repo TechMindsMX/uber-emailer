@@ -4,16 +4,20 @@ import javax.validation.constraints.NotNull
 import org.hibernate.validator.constraints.Email
 import org.hibernate.validator.constraints.SafeHtml
 
-class FacilitatorCommand implements Command {
+class AssignationCommand implements Command {
+	
+	@SafeHtml
+	String name
+	
+	@SafeHtml
+	String reference
 	
 	@Email
 	@NotNull
-	String email
+	String emailDestination
 	
-	@SafeHtml
-	String facilitator
-	
-	@SafeHtml
-	String musician
+	@Email
+	@NotNull
+	String emailReference
 	
 }

@@ -21,7 +21,7 @@ import com.tim.one.bean.MessageType;
 import com.tim.one.bean.mail.FacilitatorBean;
 import com.tim.one.bean.mail.ForgotPasswordBean;
 import com.tim.one.bean.mail.NewUserBean;
-import com.tim.one.command.FacilitatorCommand;
+import com.tim.one.command.AssignationCommand;
 import com.tim.one.command.ForgotPasswordCommand;
 import com.tim.one.command.NewUserCommand;
 import com.tim.one.command.RegisterCommand;
@@ -123,7 +123,7 @@ public class EmailController {
 	@RequestMapping(method = POST, value = "/facilitatorAssigned")
 	@ResponseBody
 	public ResponseEntity<String> facilitatorAssigned(@RequestBody String json){
-		FacilitatorCommand command = new Gson().fromJson(json, FacilitatorCommand.class);
+		AssignationCommand command = new Gson().fromJson(json, AssignationCommand.class);
 		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
 		
 		if(!validator.isValid(command)){
@@ -131,9 +131,9 @@ public class EmailController {
 		}
 		
     FacilitatorBean bean = new FacilitatorBean();
-    bean.setEmail(command.getEmail());
-    bean.setFacilitator(command.getFacilitator());
-    bean.setMusician(command.getMusician());
+    bean.setEmail(command.getEmailDestination());
+    bean.setFacilitator(command.getName());
+    bean.setMusician(command.getReference());
     bean.setType(MessageType.FACILITATOR_ASSIGNED);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
@@ -142,7 +142,7 @@ public class EmailController {
 	@RequestMapping(method = POST, value = "/musicianRefused")
 	@ResponseBody
 	public ResponseEntity<String> musicianRefused(@RequestBody String json){
-		FacilitatorCommand command = new Gson().fromJson(json, FacilitatorCommand.class);
+		AssignationCommand command = new Gson().fromJson(json, AssignationCommand.class);
 		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
 		
 		if(!validator.isValid(command)){
@@ -150,9 +150,9 @@ public class EmailController {
 		}
 		
     FacilitatorBean bean = new FacilitatorBean();
-    bean.setEmail(command.getEmail());
-    bean.setFacilitator(command.getFacilitator());
-    bean.setMusician(command.getMusician());
+    bean.setEmail(command.getEmailDestination());
+    bean.setFacilitator(command.getName());
+    bean.setMusician(command.getReference());
     bean.setType(MessageType.MUSICIAN_REFUSED);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
@@ -161,7 +161,7 @@ public class EmailController {
 	@RequestMapping(method = POST, value = "/buyerAssigned")
 	@ResponseBody
 	public ResponseEntity<String> buyerAssigned(@RequestBody String json){
-		FacilitatorCommand command = new Gson().fromJson(json, FacilitatorCommand.class);
+		AssignationCommand command = new Gson().fromJson(json, AssignationCommand.class);
 		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
 		
 		if(!validator.isValid(command)){
@@ -169,10 +169,29 @@ public class EmailController {
 		}
 		
     FacilitatorBean bean = new FacilitatorBean();
-    bean.setEmail(command.getEmail());
-    bean.setFacilitator(command.getFacilitator());
-    bean.setMusician(command.getMusician());
+    bean.setEmail(command.getEmailDestination());
+    bean.setFacilitator(command.getName());
+    bean.setMusician(command.getReference());
     bean.setType(MessageType.BUYER_ASSIGNED);
+    messageDispatcher.message(bean);
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+	}
+	
+	@RequestMapping(method = POST, value = "/companyRefused")
+	@ResponseBody
+	public ResponseEntity<String> companyRefused(@RequestBody String json){
+		AssignationCommand command = new Gson().fromJson(json, AssignationCommand.class);
+		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
+		
+    FacilitatorBean bean = new FacilitatorBean();
+    bean.setEmail(command.getEmailDestination());
+    bean.setFacilitator(command.getName());
+    bean.setMusician(command.getReference());
+    bean.setType(MessageType.COMPANY_REFUSED);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
