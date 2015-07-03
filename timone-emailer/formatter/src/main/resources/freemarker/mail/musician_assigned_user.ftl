@@ -39,7 +39,7 @@
                 <tr>
 
                     <th>
-                        <h1>Asignación de Comprador</h1>            
+                        <h1>Asignación de Facilitador</h1>            
                     </th>
                 </tr>
             </thead>
@@ -48,7 +48,8 @@
                     
                     <td>
                         <HR width=100% align="center">
-                        <p>Estimado usuario, le informamos que se ha asignado el comprador <span class="text-blue">${nombre comprador}</span> con correo electrónco: <span class="text-blue">${email comprador}</span> para la empresa <span class="text-blue">${empresa}</span></p>        
+                        <p>Estimado usuario, le informamos que se ha asignado el facilitador 
+                        <span class="text-blue">${name}</span> con correo electrónco: <span class="text-blue">${emailOptional}</span> para el músico <span class="text-blue">${reference}</span></p>        
                     </td>
                 </tr>
             </tbody>

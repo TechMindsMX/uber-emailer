@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <p>Estimado ${facilitator} le informamos que los datos del músico ${musician} tienen no conformidades.</p>
+                <p>Estimado ${name} le informamos que los datos del músico ${reference} tienen no conformidades.</p>
                 <p><br></p>
                 <p><br></p>
                 <p class="text-center"><br></p>

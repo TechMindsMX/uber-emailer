@@ -48,7 +48,7 @@
                     
                     <td>
                         <HR width=100% align="center">
-                        <p>Estimado <span class="text-blue">${nombre de la persona registró a la empresa}</span> le informamos que los datos de la empresa <span class="text-blue">${nombre de la empresa}</span> tienen no conformidades</p>
+                        <p>Estimado <span class="text-blue">${name}</span> le informamos que los datos de la empresa <span class="text-blue">${reference}</span> tienen no conformidades</p>
                     </td>
                 </tr>
             </tbody>
