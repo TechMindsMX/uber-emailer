@@ -14,10 +14,9 @@ class AssignationCommand implements Command {
 	
 	@Email
 	@NotNull
-	String emailDestination
+	String email
 	
 	@Email
-	@NotNull
-	String emailReference
+	String emailOptional
 	
 }

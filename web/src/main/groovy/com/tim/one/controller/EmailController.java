@@ -131,10 +131,29 @@ public class EmailController {
 		}
 		
     AssignationBean bean = new AssignationBean();
-    bean.setEmail(command.getEmailDestination());
+    bean.setEmail(command.getEmail());
     bean.setName(command.getName());
     bean.setReference(command.getReference());
-    bean.setType(MessageType.FACILITATOR_ASSIGNED);
+    bean.setType(MessageType.MUSICIAN_ASSIGNED_FACILITATOR);
+    messageDispatcher.message(bean);
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+	}
+	
+	@RequestMapping(method = POST, value = "/musicianAssignedUser")
+	@ResponseBody
+	public ResponseEntity<String> musicianAssignedUser(@RequestBody String json){
+		AssignationCommand command = new Gson().fromJson(json, AssignationCommand.class);
+		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
+		
+    AssignationBean bean = new AssignationBean();
+    bean.setEmail(command.getEmail());
+    bean.setName(command.getName());
+    bean.setReference(command.getReference());
+    bean.setType(MessageType.MUSICIAN_ASSIGNED_USER);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
@@ -150,7 +169,7 @@ public class EmailController {
 		}
 		
     AssignationBean bean = new AssignationBean();
-    bean.setEmail(command.getEmailDestination());
+    bean.setEmail(command.getEmail());
     bean.setName(command.getName());
     bean.setReference(command.getReference());
     bean.setType(MessageType.MUSICIAN_REFUSED);
@@ -169,10 +188,29 @@ public class EmailController {
 		}
 		
     AssignationBean bean = new AssignationBean();
-    bean.setEmail(command.getEmailDestination());
+    bean.setEmail(command.getEmail());
     bean.setName(command.getName());
     bean.setReference(command.getReference());
-    bean.setType(MessageType.BUYER_ASSIGNED);
+    bean.setType(MessageType.COMPANY_ASSIGNED_BUYER);
+    messageDispatcher.message(bean);
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+	}
+	
+	@RequestMapping(method = POST, value = "/companyAssignedUser")
+	@ResponseBody
+	public ResponseEntity<String> companyAssignedUser(@RequestBody String json){
+		AssignationCommand command = new Gson().fromJson(json, AssignationCommand.class);
+		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
+		
+    AssignationBean bean = new AssignationBean();
+    bean.setEmail(command.getEmail());
+    bean.setName(command.getName());
+    bean.setReference(command.getReference());
+    bean.setType(MessageType.COMPANY_ASSIGNED_USER);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
@@ -188,7 +226,7 @@ public class EmailController {
 		}
 		
     AssignationBean bean = new AssignationBean();
-    bean.setEmail(command.getEmailDestination());
+    bean.setEmail(command.getEmail());
     bean.setName(command.getName());
     bean.setReference(command.getReference());
     bean.setType(MessageType.COMPANY_REFUSED);
