@@ -153,6 +153,7 @@ public class EmailController {
     bean.setEmail(command.getEmail());
     bean.setName(command.getName());
     bean.setReference(command.getReference());
+    bean.setEmailOptional(command.getEmailOptional());
     bean.setType(MessageType.MUSICIAN_ASSIGNED_USER);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
@@ -210,6 +211,7 @@ public class EmailController {
     bean.setEmail(command.getEmail());
     bean.setName(command.getName());
     bean.setReference(command.getReference());
+    bean.setEmailOptional(command.getEmailOptional());
     bean.setType(MessageType.COMPANY_ASSIGNED_USER);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
