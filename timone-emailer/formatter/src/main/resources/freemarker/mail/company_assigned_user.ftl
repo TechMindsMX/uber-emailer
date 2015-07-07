@@ -48,7 +48,7 @@
                     
                     <td>
                         <HR width=100% align="center">
-                        <p>Estimado usuario, le informamos que se ha asignado el comprador <span class="text-blue">${name}</span> con correo electrónco: <span class="text-blue">${emailOptional}</span> para la empresa <span class="text-blue">${company}</span></p>        
+                        <p>Estimado usuario, le informamos que se ha asignado el comprador <span class="text-blue">${name}</span> con correo electrónico: <span class="text-blue">${emailOptional}</span> para la empresa <span class="text-blue">${company}</span></p>        
                     </td>
                 </tr>
             </tbody>
