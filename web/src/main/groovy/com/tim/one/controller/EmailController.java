@@ -254,4 +254,23 @@ public class EmailController {
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
+	
+	@RequestMapping(method = POST, value = "/musicianEdited")
+	@ResponseBody
+	public ResponseEntity<String> musicianEdited(@RequestBody String json){
+		AssignationCommand command = new Gson().fromJson(json, AssignationCommand.class);
+		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
+		
+    AssignationBean bean = new AssignationBean();
+    bean.setEmail(command.getEmail());
+    bean.setName(command.getName());
+    bean.setReference(command.getReference());
+    bean.setType(MessageType.MUSICIAN_EDITED);
+    messageDispatcher.message(bean);
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+	}
 }
