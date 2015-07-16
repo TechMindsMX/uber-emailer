@@ -7,3 +7,5 @@
 timone-emailer/formatter/bin/
 services/bin
 web/bin
+web/src/main/resources/config/
+services/src/test/resources/config/
