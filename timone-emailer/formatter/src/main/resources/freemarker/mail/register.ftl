@@ -44,8 +44,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="clearfix clear-columns text-blue">
-                            <h3>
-    Confirmación de cuenta</h3>
+                            <h3>Confirmación de cuenta</h3>
                             <hr>
                         </div>
                     </div>
