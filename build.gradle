@@ -129,6 +129,8 @@ project(":web"){
     compile project(":services")
 	}
 	
+	println "Setting environment to: ${currentEnvironment}"
+	
 	def filesToInclude = ["*-${currentEnvironment}.properties"]
 	def toDirectory = 'src/main/resources/config'
 	task settingEnvironment(type:Copy) {
