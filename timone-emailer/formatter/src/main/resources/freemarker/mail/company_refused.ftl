@@ -48,7 +48,10 @@
                     
                     <td>
                         <HR width=100% align="center">
-                        <p>Estimado <span class="text-blue">${name}</span> le informamos que los datos de la empresa <span class="text-blue">${reference}</span> tienen no conformidades</p>
+                        <p>Estimado <span class="text-blue">${name}</span> le informamos que los datos de la empresa <span class="text-blue">${reference}</span> tiene el siguiente motivo de rechazo:</p>
+                    </td>
+                    <td>
+                    <p>${note}</p>
                     </td>
                 </tr>
             </tbody>

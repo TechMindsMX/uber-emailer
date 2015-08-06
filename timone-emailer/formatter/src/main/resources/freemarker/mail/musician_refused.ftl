@@ -34,8 +34,9 @@
                         </div>
                     </div>
                 </div>
-                <p>Estimado ${name} le informamos que los datos del músico ${reference} tienen no conformidades.</p>
+                <p>Estimado ${name} le informamos que los datos del músico ${reference} tiene el siguiente motivo de rechazo:</p>
                 <p><br></p>
+                ${note}
                 <p><br></p>
                 <p class="text-center"><br></p>
             </div>
