@@ -7,5 +7,6 @@ class AssignationBean implements MessageBean {
 	String name
 	String reference
 	String emailOptional
+	String note
 	MessageType type
 }

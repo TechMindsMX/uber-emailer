@@ -19,4 +19,7 @@ class AssignationCommand implements Command {
 	@Email
 	String emailOptional
 	
+	@SafeHtml
+	String note
+	
 }
