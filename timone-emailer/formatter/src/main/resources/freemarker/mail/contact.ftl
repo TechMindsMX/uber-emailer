@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <p>Estimado ${name} hemos recibido sus datos de contácto.</p>
+                <p>Nombre: ${name}</p>
                 <p>Email: ${emailOptional}</p>
                 <p>Teléfono: ${phone}</p>
                 <p>Asunto: ${subject}</p>
