@@ -55,6 +55,10 @@ public class ValuarteController {
 		ContactBean bean = new ContactBean();
     bean.setEmail("sergio@makingdevs.com");
     bean.setName(command.getName());
+    bean.setEmailOptional(command.getEmailOptional());
+    bean.setPhone(command.getPhone());
+    bean.setSubject(command.getSubject());
+    bean.setMessage(command.getMessage());
     bean.setType(MessageType.CONTACT);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);

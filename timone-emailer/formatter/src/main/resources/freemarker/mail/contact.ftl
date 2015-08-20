@@ -28,13 +28,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="clearfix clear-columns text-blue">
-                            <h3>
-    Administrador</h3>
+                            <h3>Administrador</h3>
                             <hr>
                         </div>
                     </div>
                 </div>
                 <p>Estimado ${name} hemos recibido sus datos de contácto.</p>
+                <p>Email: ${emailOptional}</p>
+                <p>Teléfono: ${phone}</p>
+                <p>Asunto: ${subject}</p>
+                <p>Message: ${message}</p>
                 <p><br></p>
                 <p><br></p>
                 <p class="text-center"><br></p>
