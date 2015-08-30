@@ -8,6 +8,7 @@ ext {
   hibernateValidatorVersion = "5.1.3.Final"
   hsqldbVersion = "1.8.0.10"
   jmsApiVersion = "1.1-rev-1"
+	groovyVersion = "2.3.10"
   currentEnvironment = project.hasProperty("environment")?environment:"development"
   timoneConfigurationDir = "${System.getProperty('user.home')}/.emailer"
 }
@@ -39,7 +40,7 @@ subprojects {
     testCompile "org.mockito:mockito-all:1.10.19"
     testCompile "org.springframework:spring-test:$springVersion"
     testCompile "org.spockframework:spock-spring:0.7-groovy-2.0"
-    compile 'org.codehaus.groovy:groovy-all:2.3.6'
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
     compile "log4j:log4j:1.2.17"
     compile 'net.bull.javamelody:javamelody-core:1.53.0'
   }

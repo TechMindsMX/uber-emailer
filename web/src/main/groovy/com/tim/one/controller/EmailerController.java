@@ -42,9 +42,9 @@ public class EmailerController {
 
 	private Log log = LogFactory.getLog(getClass());
 
-	@RequestMapping(method = POST, value = "/monitor")
+	@RequestMapping(method = POST, value = "/message")
 	@ResponseBody
-	public ResponseEntity<String> forgotPassword(@RequestBody String json){
+	public ResponseEntity<String> message(@RequestBody String json){
 		MessageCommand command = new Gson().fromJson(json, MessageCommand.class);
 		log.info("Sending contact email: " + ToStringBuilder.reflectionToString(command));
 		
@@ -53,7 +53,7 @@ public class EmailerController {
 		}
 		
 		MessageBean bean = new MessageBean();
-    bean.setEmail("joseluis.delacruz@gmail.com");
+    bean.setEmail(command.getEmail());
     bean.setMessage(command.getMessage());
     bean.setType(MessageType.MESSAGE);
     messageDispatcher.message(bean);
