@@ -14,7 +14,7 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
-import com.tim.one.bean.mail.MessageBean;
+import com.tim.one.bean.mail.EmailBean;
 
 /**
  * @author josdem
@@ -32,7 +32,7 @@ public class MessageService {
 
 	private Log log = LogFactory.getLog(getClass());
 
-	public void message(final MessageBean bean) {
+	public void message(final EmailBean bean) {
 		log.info("CALLING Message");
 		log.info("bean: " + ToStringBuilder.reflectionToString(bean));
 		template.send(destination, new MessageCreator() {

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service
 
 import com.makingdevs.integration.MailService
 import com.tim.one.service.NotificationService
-import com.tim.one.bean.mail.MessageBean
+import com.tim.one.bean.mail.EmailBean
 
 @Service
 class NotificationServiceImpl implements NotificationService {
@@ -23,14 +23,14 @@ class NotificationServiceImpl implements NotificationService {
   private Log log = LogFactory.getLog(getClass())
 
   @Override
-  void sendNotification(MessageBean messageBean) {
+  void sendNotification(EmailBean messageBean) {
 		log.info "messageBean: ${messageBean.dump()}" 
     def (subject, templateName) = obtainSubjectAndResourceToSendNotification(messageBean)
     def data = [subject:subject, templateName:templateName, bean:messageBean]
     sendNotificationWithData(data)
   }
 
-  private def obtainSubjectAndResourceToSendNotification(MessageBean messageBean){
+  private def obtainSubjectAndResourceToSendNotification(EmailBean messageBean){
     String templateKey = "${messageBean.type.toString()}_PATH"
     String subjectKey = "${messageBean.type.toString()}_SUBJECT"
 

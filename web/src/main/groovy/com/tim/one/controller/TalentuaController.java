@@ -37,7 +37,7 @@ import com.tim.one.validator.CommandValidator;
 
 @Controller
 @RequestMapping("/email/*")
-public class EmailController {
+public class TalentuaController {
 
 	@Autowired
 	private MessageService messageDispatcher;

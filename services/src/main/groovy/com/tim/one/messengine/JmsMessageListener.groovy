@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 import com.makingdevs.integration.MailService
-import com.tim.one.bean.mail.MessageBean
+import com.tim.one.bean.mail.EmailBean
 import com.tim.one.service.NotificationService
 
 @Service

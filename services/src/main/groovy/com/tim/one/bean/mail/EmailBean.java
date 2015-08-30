@@ -2,6 +2,6 @@ package com.tim.one.bean.mail;
 
 import java.io.Serializable;
 
-public interface MessageBean extends Serializable {
+public interface EmailBean extends Serializable {
 	String getEmail();
 }
