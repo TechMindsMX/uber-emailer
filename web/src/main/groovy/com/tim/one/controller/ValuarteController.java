@@ -19,7 +19,9 @@ import com.google.gson.Gson;
 import com.tim.one.bean.ErrorCode;
 import com.tim.one.bean.MessageType;
 import com.tim.one.bean.mail.ContactBean;
+import com.tim.one.bean.mail.ForgotPasswordBean;
 import com.tim.one.command.ContactCommand;
+import com.tim.one.command.ForgotPasswordCommand;
 import com.tim.one.integration.MessageService;
 import com.tim.one.validator.CommandValidator;
 
@@ -44,7 +46,7 @@ public class ValuarteController {
 
 	@RequestMapping(method = POST, value = "/contact")
 	@ResponseBody
-	public ResponseEntity<String> forgotPassword(@RequestBody String json){
+	public ResponseEntity<String> contact(@RequestBody String json){
 		ContactCommand command = new Gson().fromJson(json, ContactCommand.class);
 		log.info("Sending contact email: " + ToStringBuilder.reflectionToString(command));
 		
@@ -60,6 +62,24 @@ public class ValuarteController {
     bean.setSubject(command.getSubject());
     bean.setMessage(command.getMessage());
     bean.setType(MessageType.CONTACT);
+    messageDispatcher.message(bean);
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+	}
+	
+	@RequestMapping(method = POST, value = "/forgotPassword")
+	@ResponseBody
+	public ResponseEntity<String> forgotPassword(@RequestBody String json){
+		ForgotPasswordCommand command = new Gson().fromJson(json, ForgotPasswordCommand.class);
+		log.info("Sending email: " + ToStringBuilder.reflectionToString(command));
+		
+		if(!validator.isValid(command)){
+	    return new ResponseEntity<String>("Error: " + ErrorCode.VALIDATOR_ERROR.ordinal(), HttpStatus.BAD_REQUEST);
+		}
+		
+    ForgotPasswordBean bean = new ForgotPasswordBean();
+    bean.setToken(command.getToken());
+    bean.setEmail(command.getEmail());
+    bean.setType(MessageType.FORGOT_PASSWORD);
     messageDispatcher.message(bean);
     return new ResponseEntity<String>("OK", HttpStatus.OK);
 	}
